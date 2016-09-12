@@ -1,0 +1,1049 @@
+Script started on Sun Sep 11 15:07:23 2016
+[?1034hbash-3.2$ ls -al /Applications/apps/sw_dev_tools-not_gnu/antlr \[K
+total 3016
+drwxr-xr-x   3 zhiyang  admin      102 Sep 11 14:44 .
+drwxr-xr-x  12 zhiyang  admin      408 Sep 11 14:44 ..
+-rw-r--r--@  1 zhiyang  staff  1543365 Sep 11 14:43 antlr-4.5-complete.jar
+bash-3.2$ more ~/.s[Kbash_profile
+[?1h=# This is written by Zhiyang Ong, and is his Bash profile
+
+
+###################################################################
+# Modify (add/remove) the paths for my applications
+
+# Paths are added for:
+# MetaPost (version 1.102) -- head of the list of path names
+# texmf.cnf (required for using MetaPost) -- second on the list of path names
+# Paths are added for:
+# [No paths are removed yet]
+#PATH="/Applications/apps/graphics/metapost-1.102/build/texk/web2c/mpdir/:/Applications/apps/g raphics/metapost-1.102/src/texk/kpathsea/:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/ local/bin:/usr/texbin:/usr/X11/bin:/usr/X11R6/bin:$PATH"
+
+
+
+# Paths are added for:
+# NEdit 5.5 -- head of the path names
+# Paths are added for:
+# Scripts in: /Applications/apps/scripts
+# These are utility scripts to perform various functions. They are written in Ruby, Python, Pe rl, and Tcl. Also, they include UNIX shell scripts.
+# Paths are added for:
+# Homebrew
+# Paths are added for:
+# [No paths are removed yet]
+
+
+#       PATH WITH BOOST C++ REMOVED.
+#PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/sw/bin:/sw/sbin:/usr/ bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/Applications/apps/math/Octav e.app/Contents/Resources/bin:/usr/X11R6/bin:/Developer/Simulator/GTKwave/bin:/Applications/app s/comp_lang/lua-5.1:/Developer/Simulator/Icarus/bin:/Applications/apps/sw_dev_tools-not_gnu/gn at/bin:/Applications/apps/math/homebrew/bin:$PATH"
+#       PATH WITH BOOST C++.
+PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/sw/bin:/sw/sbin:/usr/b in:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/Applications/apps/math/Octave .app/Contents/Resources/bin:/usr/X11R6/bin:/Applications/apps/sw_dev_tools-not_gnu/boost_1_48_ 0:/Developer/Simulator/GTKwave/bin:/Applications/apps/comp_lang/lua-5.1:/Developer/Simulator/I carus/bin:/Applications/apps/sw_dev_tools-not_gnu/gnat/bin:/Applications/apps/math/homebrew/bi n:/Applications/apps/comp_lang/scala-2.10.3/bin:/Applications/apps/graphics/sip-4.15.4/sipgen: /Applications/apps/graphics/qt_5_2_1/5.2.1/clang_64/bin:/Applications/apps/comp_lang/scala-2.1 1.8/bin:/Applications/apps/comp_lang/activator-dist-1.3.10/bin:/Applications/apps/sw_dev_tools -not_gnu/antlr:$PATH"
+
+#PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/usr/bin:/bin:/usr/sbi n:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/usr/X11R6/bin:/Developer/Simulator/GTKwave/bi n:/Developer/Simulator/Icarus/bin:/Applications/apps/graphics/qt_5_2_1/5.2.1/clang_64/bin:/App lications/apps/sw_dev_tools-not_gnu/gnat/bin:$PATH"
+export PATH
+
+
+
+
+
+
+
+#Hallelujah! >echo $PATH
+[7m/Users/zhiyang/.bash_profile[27m[K[K#/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Setting the environment variables
+#       export CXX=g++
+##############export CC=c89
+#export CC=gcc
+#export CC=c99
+#       export CC=gnu9x
+#       export CFLAGS=-O2
+###     export LIBS=-lposix
+
+
+BOOST_ROOT=/Applications/apps/sw_dev_tools-not_gnu/boost_1_48_0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Change my shell prompt here
+#PS1='Hallelujah! >'
+PS1='Go Trojans >'
+
+
+
+
+
+
+
+
+
+
+:[K[K:[K[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Setting up aliases and symbolic links
+
+# I am unable to add the new path for MetaPost (updated version) to the current path, and have  mpost refer to that. Hence, I am adding a symbolic link for MetaPost
+# UPDATE: Bug fixed -- I added the path in front of the default path, so that the path for the  new/updated MetaPost will be used, instead of the old path (/usr/texbin/mpost) 
+#ln -s /Applications/apps/graphics/metapost-1.102/build/texk/web2c/mpdir/mpost mpost
+
+alias ngspice='/usr/local/bin/ngspice'
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_profil e.macports-saved_2011-05-10_at_15:03:02
+##
+
+# MacPorts Installer addition on 2011-05-10_at_15:03:02: adding an appropriate PATH variable f or use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# Fix problems with modified links owing to the update to Mac OS X 10.10.
+alias libSM.6.dylib='/opt/local/lib/libSM.6.dylib'
+alias libSM.6.dylib='/opt/X11/lib/libSM.6.dylib'
+# Broken link:::/usr/X11/lib/libSM.6.dylib
+
+
+# Create a alias for ANTLR, a parser generator for Java.
+alias antlr4='java -jar /Applications/apps/sw_dev_tools-not_gnu/antlr/antlr-4.5-complete.jar'
+alias grun='java org.antlr.v4.runtime.misc.TestRig'
+
+:[K[K
+
+
+
+
+
+####################################################################
+# Added to install GNU Octave
+export CFLAGS="-I/usr/local/include"
+export CPPFLAGS="-I/usr/local/include"
+export LDFLAGS="-L/usr/local/lib"
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_profil e.macports-saved_2015-04-11_at_12:03:50
+##
+
+# MacPorts Installer addition on 2015-04-11_at_12:03:50: adding an appropriate PATH variable f or use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_profil e.macports-saved_2016-06-03_at_18:43:27
+##
+
+# MacPorts Installer addition on 2016-06-03_at_18:43:27: adding an appropriate PATH variable f or use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+[K[?1l>bash-3.2$  [Ktoic[K[Kuch Hello.g4
+bash-3.2$ more Hello.g4 
+[?1h=// Define a grammar called Hello
+grammar Hello;
+r  : 'hello' ID ;         // match keyword hello followed by an identifier
+ID : [a-z]+ ;             // match lower-case identifiers
+WS : [ \t\r\n]+ -> skip ; // skip spaces, tabs, newlines
+
+
+
+
+[K[?1l>bash-3.2$ antlr4 Hello.g4
+bash: antlr4: command not found
+bash-3.2$ source .b[K~[K[K~/.s[Kbash_profile
+Go Trojans >source ~/.bash_profile[C[C[C[C[C[C[C[C[C[C[C[C[7Pantlr4 Hello.g4
+Go Trojans >javac Hello*.java
+HelloBaseListener.java:3: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.ParserRuleContext;
+                           ^
+HelloBaseListener.java:4: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.NotNull;
+                                ^
+HelloBaseListener.java:5: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.ErrorNode;
+                                ^
+HelloBaseListener.java:6: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.TerminalNode;
+                                ^
+HelloListener.java:2: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.NotNull;
+                                ^
+HelloListener.java:3: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.ParseTreeListener;
+                                ^
+HelloListener.java:9: error: cannot find symbol
+public interface HelloListener extends ParseTreeListener {
+                                       ^
+  symbol: class ParseTreeListener
+HelloParser.java:2: error: package org.antlr.v4.runtime.atn does not exist
+import org.antlr.v4.runtime.atn.*;
+^
+HelloParser.java:3: error: package org.antlr.v4.runtime.dfa does not exist
+import org.antlr.v4.runtime.dfa.DFA;
+                               ^
+HelloParser.java:4: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.*;
+^
+HelloParser.java:5: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.*;
+^
+HelloParser.java:6: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.*;
+^
+HelloParser.java:12: error: cannot find symbol
+public class HelloParser extends Parser {
+                                 ^
+  symbol: class Parser
+HelloParser.java:81: error: cannot find symbol
+	public static class RContext extends ParserRuleContext {
+	                                     ^
+  symbol:   class ParserRuleContext
+  location: class HelloParser
+HelloBaseListener.java:32: error: cannot find symbol
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	                                     ^
+  symbol:   class ParserRuleContext
+  location: class HelloBaseListener
+HelloBaseListener.java:38: error: cannot find symbol
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	                                    ^
+  symbol:   class ParserRuleContext
+  location: class HelloBaseListener
+HelloBaseListener.java:44: error: cannot find symbol
+	@Override public void visitTerminal(TerminalNode node) { }
+	                                    ^
+  symbol:   class TerminalNode
+  location: class HelloBaseListener
+HelloBaseListener.java:50: error: cannot find symbol
+	@Override public void visitErrorNode(ErrorNode node) { }
+	                                     ^
+  symbol:   class ErrorNode
+  location: class HelloBaseListener
+HelloParser.java:15: error: cannot find symbol
+	protected static final DFA[] _decisionToDFA;
+	                       ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloParser.java:16: error: cannot find symbol
+	protected static final PredictionContextCache _sharedContextCache =
+	                       ^
+  symbol:   class PredictionContextCache
+  location: class HelloParser
+HelloParser.java:32: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                    ^
+  symbol:   class Vocabulary
+  location: class HelloParser
+HelloParser.java:61: error: cannot find symbol
+	public Vocabulary getVocabulary() {
+	       ^
+  symbol:   class Vocabulary
+  location: class HelloParser
+HelloParser.java:75: error: cannot find symbol
+	public ATN getATN() { return _ATN; }
+	       ^
+  symbol:   class ATN
+  location: class HelloParser
+HelloParser.java:77: error: cannot find symbol
+	public HelloParser(TokenStream input) {
+	                   ^
+  symbol:   class TokenStream
+  location: class HelloParser
+HelloParser.java:97: error: cannot find symbol
+	public final RContext r() throws RecognitionException {
+	                                 ^
+  symbol:   class RecognitionException
+  location: class HelloParser
+HelloParser.java:124: error: cannot find symbol
+	public static final ATN _ATN =
+	                    ^
+  symbol:   class ATN
+  location: class HelloParser
+HelloParser.java:82: error: cannot find symbol
+		public TerminalNode ID() { return getToken(HelloParser.ID, 0); }
+		       ^
+  symbol:   class TerminalNode
+  location: class RContext
+HelloParser.java:83: error: cannot find symbol
+		public RContext(ParserRuleContext parent, int invokingState) {
+		                ^
+  symbol:   class ParserRuleContext
+  location: class RContext
+HelloParser.java:88: error: cannot find symbol
+		public void enterRule(ParseTreeListener listener) {
+		                      ^
+  symbol:   class ParseTreeListener
+  location: class RContext
+HelloParser.java:92: error: cannot find symbol
+		public void exitRule(ParseTreeListener listener) {
+		                     ^
+  symbol:   class ParseTreeListener
+  location: class RContext
+HelloLexer.java:2: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.Lexer;
+                           ^
+HelloLexer.java:3: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.CharStream;
+                           ^
+HelloLexer.java:4: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.Token;
+                           ^
+HelloLexer.java:5: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.TokenStream;
+                           ^
+HelloLexer.java:6: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.*;
+^
+HelloLexer.java:7: error: package org.antlr.v4.runtime.atn does not exist
+import org.antlr.v4.runtime.atn.*;
+^
+HelloLexer.java:8: error: package org.antlr.v4.runtime.dfa does not exist
+import org.antlr.v4.runtime.dfa.DFA;
+                               ^
+HelloLexer.java:9: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.*;
+^
+HelloLexer.java:12: error: cannot find symbol
+public class HelloLexer extends Lexer {
+                                ^
+  symbol: class Lexer
+HelloLexer.java:15: error: cannot find symbol
+	protected static final DFA[] _decisionToDFA;
+	                       ^
+  symbol:   class DFA
+  location: class HelloLexer
+HelloLexer.java:16: error: cannot find symbol
+	protected static final PredictionContextCache _sharedContextCache =
+	                       ^
+  symbol:   class PredictionContextCache
+  location: class HelloLexer
+HelloLexer.java:34: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                    ^
+  symbol:   class Vocabulary
+  location: class HelloLexer
+HelloLexer.java:63: error: cannot find symbol
+	public Vocabulary getVocabulary() {
+	       ^
+  symbol:   class Vocabulary
+  location: class HelloLexer
+HelloLexer.java:68: error: cannot find symbol
+	public HelloLexer(CharStream input) {
+	                  ^
+  symbol:   class CharStream
+  location: class HelloLexer
+HelloLexer.java:86: error: cannot find symbol
+	public ATN getATN() { return _ATN; }
+	       ^
+  symbol:   class ATN
+  location: class HelloLexer
+HelloLexer.java:98: error: cannot find symbol
+	public static final ATN _ATN =
+	                    ^
+  symbol:   class ATN
+  location: class HelloLexer
+HelloBaseListener.java:32: error: method does not override or implement a method from a supertype
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	^
+HelloBaseListener.java:38: error: method does not override or implement a method from a supertype
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	^
+HelloBaseListener.java:44: error: method does not override or implement a method from a supertype
+	@Override public void visitTerminal(TerminalNode node) { }
+	^
+HelloBaseListener.java:50: error: method does not override or implement a method from a supertype
+	@Override public void visitErrorNode(ErrorNode node) { }
+	^
+HelloParser.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	                                             ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloParser
+HelloParser.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	         ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloParser
+HelloParser.java:17: error: cannot find symbol
+		new PredictionContextCache();
+		    ^
+  symbol:   class PredictionContextCache
+  location: class HelloParser
+HelloParser.java:32: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                                                ^
+  symbol:   class VocabularyImpl
+  location: class HelloParser
+HelloParser.java:53: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:59: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:65: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:68: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:71: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:74: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:79: error: cannot find symbol
+		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		^
+  symbol:   variable _interp
+  location: class HelloParser
+HelloParser.java:79: error: cannot find symbol
+		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		              ^
+  symbol:   class ParserATNSimulator
+  location: class HelloParser
+HelloParser.java:82: error: cannot find symbol
+		public TerminalNode ID() { return getToken(HelloParser.ID, 0); }
+		                                  ^
+  symbol:   method getToken(int,int)
+  location: class RContext
+HelloParser.java:86: error: method does not override or implement a method from a supertype
+		@Override public int getRuleIndex() { return RULE_r; }
+		^
+HelloParser.java:87: error: method does not override or implement a method from a supertype
+		@Override
+		^
+HelloParser.java:91: error: method does not override or implement a method from a supertype
+		@Override
+		^
+HelloParser.java:98: error: cannot find symbol
+		RContext _localctx = new RContext(_ctx, getState());
+		                                  ^
+  symbol:   variable _ctx
+  location: class HelloParser
+HelloParser.java:98: error: cannot find symbol
+		RContext _localctx = new RContext(_ctx, getState());
+		                                        ^
+  symbol:   method getState()
+  location: class HelloParser
+HelloParser.java:99: error: cannot find symbol
+		enterRule(_localctx, 0, RULE_r);
+		^
+  symbol:   method enterRule(RContext,int,int)
+  location: class HelloParser
+HelloParser.java:101: error: cannot find symbol
+			enterOuterAlt(_localctx, 1);
+			^
+  symbol:   method enterOuterAlt(RContext,int)
+  location: class HelloParser
+HelloParser.java:103: error: cannot find symbol
+			setState(2);
+			^
+  symbol:   method setState(int)
+  location: class HelloParser
+HelloParser.java:104: error: cannot find symbol
+			match(T__0);
+			^
+  symbol:   method match(int)
+  location: class HelloParser
+HelloParser.java:105: error: cannot find symbol
+			setState(3);
+			^
+  symbol:   method setState(int)
+  location: class HelloParser
+HelloParser.java:106: error: cannot find symbol
+			match(ID);
+			^
+  symbol:   method match(int)
+  location: class HelloParser
+HelloParser.java:109: error: cannot find symbol
+		catch (RecognitionException re) {
+		       ^
+  symbol:   class RecognitionException
+  location: class HelloParser
+HelloParser.java:110: error: cannot find symbol
+			_localctx.exception = re;
+			         ^
+  symbol:   variable exception
+  location: variable _localctx of type RContext
+HelloParser.java:111: error: cannot find symbol
+			_errHandler.reportError(this, re);
+			^
+  symbol:   variable _errHandler
+  location: class HelloParser
+HelloParser.java:112: error: cannot find symbol
+			_errHandler.recover(this, re);
+			^
+  symbol:   variable _errHandler
+  location: class HelloParser
+HelloParser.java:115: error: cannot find symbol
+			exitRule();
+			^
+  symbol:   method exitRule()
+  location: class HelloParser
+HelloParser.java:125: error: cannot find symbol
+		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
+		    ^
+  symbol:   class ATNDeserializer
+  location: class HelloParser
+HelloParser.java:127: error: cannot find symbol
+		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+		                     ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloParser.java:129: error: cannot find symbol
+			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
+			                        ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloLexer.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	                                             ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloLexer
+HelloLexer.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	         ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloLexer
+HelloLexer.java:17: error: cannot find symbol
+		new PredictionContextCache();
+		    ^
+  symbol:   class PredictionContextCache
+  location: class HelloLexer
+HelloLexer.java:34: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                                                ^
+  symbol:   class VocabularyImpl
+  location: class HelloLexer
+HelloLexer.java:55: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:61: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:70: error: cannot find symbol
+		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		^
+  symbol:   variable _interp
+  location: class HelloLexer
+HelloLexer.java:70: error: cannot find symbol
+		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		              ^
+  symbol:   class LexerATNSimulator
+  location: class HelloLexer
+HelloLexer.java:73: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:76: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:79: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:82: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:85: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:99: error: cannot find symbol
+		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
+		    ^
+  symbol:   class ATNDeserializer
+  location: class HelloLexer
+HelloLexer.java:101: error: cannot find symbol
+		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+		                     ^
+  symbol:   class DFA
+  location: class HelloLexer
+HelloLexer.java:103: error: cannot find symbol
+			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
+			                        ^
+  symbol:   class DFA
+  location: class HelloLexer
+98 errors
+Go Trojans >grun Hello r -tree
+Error: Could not find or load main class org.antlr.v4.runtime.misc.TestRig
+Go Trojans >grun Hello r -tree[C[C[C[C[C[C[C[C[C[C[C[C[1Pjavac Hello*.java[C[C[C[C[C[C[C[C[C[C[C[C[2Pantlr4 Hello.g4
+Go Trojans >antlr4 Hello.g4[C[C[C[C[C[C[C[C[C[C[C[Cgrun Hello r -tree[C[C[C[C[C[C[C[C[C[C[C[C[1Pjavac Hello*.java
+HelloBaseListener.java:3: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.ParserRuleContext;
+                           ^
+HelloBaseListener.java:4: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.NotNull;
+                                ^
+HelloBaseListener.java:5: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.ErrorNode;
+                                ^
+HelloBaseListener.java:6: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.TerminalNode;
+                                ^
+HelloListener.java:2: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.NotNull;
+                                ^
+HelloListener.java:3: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.ParseTreeListener;
+                                ^
+HelloListener.java:9: error: cannot find symbol
+public interface HelloListener extends ParseTreeListener {
+                                       ^
+  symbol: class ParseTreeListener
+HelloParser.java:2: error: package org.antlr.v4.runtime.atn does not exist
+import org.antlr.v4.runtime.atn.*;
+^
+HelloParser.java:3: error: package org.antlr.v4.runtime.dfa does not exist
+import org.antlr.v4.runtime.dfa.DFA;
+                               ^
+HelloParser.java:4: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.*;
+^
+HelloParser.java:5: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.*;
+^
+HelloParser.java:6: error: package org.antlr.v4.runtime.tree does not exist
+import org.antlr.v4.runtime.tree.*;
+^
+HelloParser.java:12: error: cannot find symbol
+public class HelloParser extends Parser {
+                                 ^
+  symbol: class Parser
+HelloParser.java:81: error: cannot find symbol
+	public static class RContext extends ParserRuleContext {
+	                                     ^
+  symbol:   class ParserRuleContext
+  location: class HelloParser
+HelloBaseListener.java:32: error: cannot find symbol
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	                                     ^
+  symbol:   class ParserRuleContext
+  location: class HelloBaseListener
+HelloBaseListener.java:38: error: cannot find symbol
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	                                    ^
+  symbol:   class ParserRuleContext
+  location: class HelloBaseListener
+HelloBaseListener.java:44: error: cannot find symbol
+	@Override public void visitTerminal(TerminalNode node) { }
+	                                    ^
+  symbol:   class TerminalNode
+  location: class HelloBaseListener
+HelloBaseListener.java:50: error: cannot find symbol
+	@Override public void visitErrorNode(ErrorNode node) { }
+	                                     ^
+  symbol:   class ErrorNode
+  location: class HelloBaseListener
+HelloParser.java:15: error: cannot find symbol
+	protected static final DFA[] _decisionToDFA;
+	                       ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloParser.java:16: error: cannot find symbol
+	protected static final PredictionContextCache _sharedContextCache =
+	                       ^
+  symbol:   class PredictionContextCache
+  location: class HelloParser
+HelloParser.java:32: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                    ^
+  symbol:   class Vocabulary
+  location: class HelloParser
+HelloParser.java:61: error: cannot find symbol
+	public Vocabulary getVocabulary() {
+	       ^
+  symbol:   class Vocabulary
+  location: class HelloParser
+HelloParser.java:75: error: cannot find symbol
+	public ATN getATN() { return _ATN; }
+	       ^
+  symbol:   class ATN
+  location: class HelloParser
+HelloParser.java:77: error: cannot find symbol
+	public HelloParser(TokenStream input) {
+	                   ^
+  symbol:   class TokenStream
+  location: class HelloParser
+HelloParser.java:97: error: cannot find symbol
+	public final RContext r() throws RecognitionException {
+	                                 ^
+  symbol:   class RecognitionException
+  location: class HelloParser
+HelloParser.java:124: error: cannot find symbol
+	public static final ATN _ATN =
+	                    ^
+  symbol:   class ATN
+  location: class HelloParser
+HelloParser.java:82: error: cannot find symbol
+		public TerminalNode ID() { return getToken(HelloParser.ID, 0); }
+		       ^
+  symbol:   class TerminalNode
+  location: class RContext
+HelloParser.java:83: error: cannot find symbol
+		public RContext(ParserRuleContext parent, int invokingState) {
+		                ^
+  symbol:   class ParserRuleContext
+  location: class RContext
+HelloParser.java:88: error: cannot find symbol
+		public void enterRule(ParseTreeListener listener) {
+		                      ^
+  symbol:   class ParseTreeListener
+  location: class RContext
+HelloParser.java:92: error: cannot find symbol
+		public void exitRule(ParseTreeListener listener) {
+		                     ^
+  symbol:   class ParseTreeListener
+  location: class RContext
+HelloLexer.java:2: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.Lexer;
+                           ^
+HelloLexer.java:3: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.CharStream;
+                           ^
+HelloLexer.java:4: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.Token;
+                           ^
+HelloLexer.java:5: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.TokenStream;
+                           ^
+HelloLexer.java:6: error: package org.antlr.v4.runtime does not exist
+import org.antlr.v4.runtime.*;
+^
+HelloLexer.java:7: error: package org.antlr.v4.runtime.atn does not exist
+import org.antlr.v4.runtime.atn.*;
+^
+HelloLexer.java:8: error: package org.antlr.v4.runtime.dfa does not exist
+import org.antlr.v4.runtime.dfa.DFA;
+                               ^
+HelloLexer.java:9: error: package org.antlr.v4.runtime.misc does not exist
+import org.antlr.v4.runtime.misc.*;
+^
+HelloLexer.java:12: error: cannot find symbol
+public class HelloLexer extends Lexer {
+                                ^
+  symbol: class Lexer
+HelloLexer.java:15: error: cannot find symbol
+	protected static final DFA[] _decisionToDFA;
+	                       ^
+  symbol:   class DFA
+  location: class HelloLexer
+HelloLexer.java:16: error: cannot find symbol
+	protected static final PredictionContextCache _sharedContextCache =
+	                       ^
+  symbol:   class PredictionContextCache
+  location: class HelloLexer
+HelloLexer.java:34: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                    ^
+  symbol:   class Vocabulary
+  location: class HelloLexer
+HelloLexer.java:63: error: cannot find symbol
+	public Vocabulary getVocabulary() {
+	       ^
+  symbol:   class Vocabulary
+  location: class HelloLexer
+HelloLexer.java:68: error: cannot find symbol
+	public HelloLexer(CharStream input) {
+	                  ^
+  symbol:   class CharStream
+  location: class HelloLexer
+HelloLexer.java:86: error: cannot find symbol
+	public ATN getATN() { return _ATN; }
+	       ^
+  symbol:   class ATN
+  location: class HelloLexer
+HelloLexer.java:98: error: cannot find symbol
+	public static final ATN _ATN =
+	                    ^
+  symbol:   class ATN
+  location: class HelloLexer
+HelloBaseListener.java:32: error: method does not override or implement a method from a supertype
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	^
+HelloBaseListener.java:38: error: method does not override or implement a method from a supertype
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	^
+HelloBaseListener.java:44: error: method does not override or implement a method from a supertype
+	@Override public void visitTerminal(TerminalNode node) { }
+	^
+HelloBaseListener.java:50: error: method does not override or implement a method from a supertype
+	@Override public void visitErrorNode(ErrorNode node) { }
+	^
+HelloParser.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	                                             ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloParser
+HelloParser.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	         ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloParser
+HelloParser.java:17: error: cannot find symbol
+		new PredictionContextCache();
+		    ^
+  symbol:   class PredictionContextCache
+  location: class HelloParser
+HelloParser.java:32: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                                                ^
+  symbol:   class VocabularyImpl
+  location: class HelloParser
+HelloParser.java:53: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:59: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:65: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:68: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:71: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:74: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloParser.java:79: error: cannot find symbol
+		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		^
+  symbol:   variable _interp
+  location: class HelloParser
+HelloParser.java:79: error: cannot find symbol
+		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		              ^
+  symbol:   class ParserATNSimulator
+  location: class HelloParser
+HelloParser.java:82: error: cannot find symbol
+		public TerminalNode ID() { return getToken(HelloParser.ID, 0); }
+		                                  ^
+  symbol:   method getToken(int,int)
+  location: class RContext
+HelloParser.java:86: error: method does not override or implement a method from a supertype
+		@Override public int getRuleIndex() { return RULE_r; }
+		^
+HelloParser.java:87: error: method does not override or implement a method from a supertype
+		@Override
+		^
+HelloParser.java:91: error: method does not override or implement a method from a supertype
+		@Override
+		^
+HelloParser.java:98: error: cannot find symbol
+		RContext _localctx = new RContext(_ctx, getState());
+		                                  ^
+  symbol:   variable _ctx
+  location: class HelloParser
+HelloParser.java:98: error: cannot find symbol
+		RContext _localctx = new RContext(_ctx, getState());
+		                                        ^
+  symbol:   method getState()
+  location: class HelloParser
+HelloParser.java:99: error: cannot find symbol
+		enterRule(_localctx, 0, RULE_r);
+		^
+  symbol:   method enterRule(RContext,int,int)
+  location: class HelloParser
+HelloParser.java:101: error: cannot find symbol
+			enterOuterAlt(_localctx, 1);
+			^
+  symbol:   method enterOuterAlt(RContext,int)
+  location: class HelloParser
+HelloParser.java:103: error: cannot find symbol
+			setState(2);
+			^
+  symbol:   method setState(int)
+  location: class HelloParser
+HelloParser.java:104: error: cannot find symbol
+			match(T__0);
+			^
+  symbol:   method match(int)
+  location: class HelloParser
+HelloParser.java:105: error: cannot find symbol
+			setState(3);
+			^
+  symbol:   method setState(int)
+  location: class HelloParser
+HelloParser.java:106: error: cannot find symbol
+			match(ID);
+			^
+  symbol:   method match(int)
+  location: class HelloParser
+HelloParser.java:109: error: cannot find symbol
+		catch (RecognitionException re) {
+		       ^
+  symbol:   class RecognitionException
+  location: class HelloParser
+HelloParser.java:110: error: cannot find symbol
+			_localctx.exception = re;
+			         ^
+  symbol:   variable exception
+  location: variable _localctx of type RContext
+HelloParser.java:111: error: cannot find symbol
+			_errHandler.reportError(this, re);
+			^
+  symbol:   variable _errHandler
+  location: class HelloParser
+HelloParser.java:112: error: cannot find symbol
+			_errHandler.recover(this, re);
+			^
+  symbol:   variable _errHandler
+  location: class HelloParser
+HelloParser.java:115: error: cannot find symbol
+			exitRule();
+			^
+  symbol:   method exitRule()
+  location: class HelloParser
+HelloParser.java:125: error: cannot find symbol
+		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
+		    ^
+  symbol:   class ATNDeserializer
+  location: class HelloParser
+HelloParser.java:127: error: cannot find symbol
+		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+		                     ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloParser.java:129: error: cannot find symbol
+			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
+			                        ^
+  symbol:   class DFA
+  location: class HelloParser
+HelloLexer.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	                                             ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloLexer
+HelloLexer.java:13: error: cannot find symbol
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
+	         ^
+  symbol:   variable RuntimeMetaData
+  location: class HelloLexer
+HelloLexer.java:17: error: cannot find symbol
+		new PredictionContextCache();
+		    ^
+  symbol:   class PredictionContextCache
+  location: class HelloLexer
+HelloLexer.java:34: error: cannot find symbol
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	                                                ^
+  symbol:   class VocabularyImpl
+  location: class HelloLexer
+HelloLexer.java:55: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:61: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:70: error: cannot find symbol
+		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		^
+  symbol:   variable _interp
+  location: class HelloLexer
+HelloLexer.java:70: error: cannot find symbol
+		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+		              ^
+  symbol:   class LexerATNSimulator
+  location: class HelloLexer
+HelloLexer.java:73: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:76: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:79: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:82: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:85: error: method does not override or implement a method from a supertype
+	@Override
+	^
+HelloLexer.java:99: error: cannot find symbol
+		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
+		    ^
+  symbol:   class ATNDeserializer
+  location: class HelloLexer
+HelloLexer.java:101: error: cannot find symbol
+		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+		                     ^
+  symbol:   class DFA
+  location: class HelloLexer
+HelloLexer.java:103: error: cannot find symbol
+			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
+			                        ^
+  symbol:   class DFA
+  location: class HelloLexer
+98 errors
+Go Trojans >l s-la
+bash: l: command not found
+Go Trojans >ls -la
+total 136
+drwxr-xr-x  10 zhiyang  staff    340 Sep 11 15:09 .
+drwxr-xr-x   5 zhiyang  staff    170 Sep 11 15:05 ..
+-rw-r--r--   1 zhiyang  staff    242 Sep 11 15:08 Hello.g4
+-rw-r--r--   1 zhiyang  staff     27 Sep 11 15:11 Hello.tokens
+-rw-r--r--   1 zhiyang  staff   1344 Sep 11 15:11 HelloBaseListener.java
+-rw-r--r--   1 zhiyang  staff   3127 Sep 11 15:11 HelloLexer.java
+-rw-r--r--   1 zhiyang  staff     27 Sep 11 15:11 HelloLexer.tokens
+-rw-r--r--   1 zhiyang  staff    576 Sep 11 15:11 HelloListener.java
+-rw-r--r--   1 zhiyang  staff   3572 Sep 11 15:11 HelloParser.java
+-rw-r--r--   1 zhiyang  staff  39586 Sep 11 15:11 part-0.log
+Go Trojans >exit
+exit
+
+Script done on Sun Sep 11 15:11:18 2016
