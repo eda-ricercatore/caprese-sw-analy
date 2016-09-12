@@ -16,6 +16,7 @@
 clean:
 	rm *.java
 	rm *.tokens
+	rm *.class
 
 
 

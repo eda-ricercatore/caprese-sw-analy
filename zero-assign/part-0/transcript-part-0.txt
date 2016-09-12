@@ -1,0 +1,262 @@
+Script started on Sun Sep 11 20:39:19 2016
+[?1034hbash-3.2$ sour e[K[Kce ~/.bash_profile
+Go Trojans >ls -al /Applications/apps/sw_dev_tools-not_gnu/antlr 
+total 5920
+drwxr-xr-x   4 zhiyang  admin      136 Sep 11 15:19 .
+drwxr-xr-x  12 zhiyang  admin      408 Sep 11 14:44 ..
+-rw-r--r--@  1 zhiyang  staff  1543365 Sep 11 14:43 antlr-4.5-complete.jar
+-rw-r--r--@  1 zhiyang  staff  1485121 Sep 11 15:19 antlr-4.5.3-complete.jar
+Go Trojans >more ~/.bash_profile
+[?1h=# This is written by Zhiyang Ong, and is his Bash profile
+
+
+###################################################################
+# Modify (add/remove) the paths for my applications
+
+# Paths are added for:
+# MetaPost (version 1.102) -- head of the list of path names
+# texmf.cnf (required for using MetaPost) -- second on the list of path names
+# Paths are added for:
+# [No paths are removed yet]
+#PATH="/Applications/apps/graphics/metapost-1.102/build/texk/web2c/mpdir/:/Applications/ap ps/graphics/metapost-1.102/src/texk/kpathsea/:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sb in:/usr/local/bin:/usr/texbin:/usr/X11/bin:/usr/X11R6/bin:$PATH"
+
+
+
+# Paths are added for:
+# NEdit 5.5 -- head of the path names
+# Paths are added for:
+# Scripts in: /Applications/apps/scripts
+# These are utility scripts to perform various functions. They are written in Ruby, Python , Perl, and Tcl. Also, they include UNIX shell scripts.
+# Paths are added for:
+# Homebrew
+# Paths are added for:
+# [No paths are removed yet]
+
+
+#       PATH WITH BOOST C++ REMOVED.
+#PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/sw/bin:/sw/sbin:/ usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/Applications/apps/ma th/Octave.app/Contents/Resources/bin:/usr/X11R6/bin:/Developer/Simulator/GTKwave/bin:/Appl ications/apps/comp_lang/lua-5.1:/Developer/Simulator/Icarus/bin:/Applications/apps/sw_dev_ tools-not_gnu/gnat/bin:/Applications/apps/math/homebrew/bin:$PATH"
+#       PATH WITH BOOST C++.
+PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/sw/bin:/sw/sbin:/u sr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/Applications/apps/mat h/Octave.app/Contents/Resources/bin:/usr/X11R6/bin:/Applications/apps/sw_dev_tools-not_gnu /boost_1_48_0:/Developer/Simulator/GTKwave/bin:/Applications/apps/comp_lang/lua-5.1:/Devel oper/Simulator/Icarus/bin:/Applications/apps/sw_dev_tools-not_gnu/gnat/bin:/Applications/a pps/math/homebrew/bin:/Applications/apps/comp_lang/scala-2.10.3/bin:/Applications/apps/gra phics/sip-4.15.4/sipgen:/Applications/apps/graphics/qt_5_2_1/5.2.1/clang_64/bin:/Applicati ons/apps/comp_lang/scala-2.11.8/bin:/Applications/apps/comp_lang/activator-dist-1.3.10/bin :$PATH"
+
+#PATH="/Applications/apps/scripts:/Applications/apps/text_editors/nedit:/usr/bin:/bin:/usr /sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/usr/X11R6/bin:/Developer/Simulator/GT Kwave/bin:/Developer/Simulator/Icarus/bin:/Applications/apps/graphics/qt_5_2_1/5.2.1/clang _64/bin:/Applications/apps/sw_dev_tools-not_gnu/gnat/bin:$PATH"
+export PATH
+
+
+
+
+
+
+
+#Hallelujah! >echo $PATH
+#/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin
+
+[7m/Users/zhiyang/.bash_profile[27m[K[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Setting the environment variables
+#       export CXX=g++
+##############export CC=c89
+#export CC=gcc
+#export CC=c99
+#       export CC=gnu9x
+#       export CFLAGS=-O2
+###     export LIBS=-lposix
+
+
+BOOST_ROOT=/Applications/apps/sw_dev_tools-not_gnu/boost_1_48_0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Change my shell prompt here
+#PS1='Hallelujah! >'
+PS1='Go Trojans >'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:[K[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# Setting up aliases and symbolic links
+
+# I am unable to add the new path for MetaPost (updated version) to the current path, and  have mpost refer to that. Hence, I am adding a symbolic link for MetaPost
+# UPDATE: Bug fixed -- I added the path in front of the default path, so that the path for  the new/updated MetaPost will be used, instead of the old path (/usr/texbin/mpost) 
+#ln -s /Applications/apps/graphics/metapost-1.102/build/texk/web2c/mpdir/mpost mpost
+
+alias ngspice='/usr/local/bin/ngspice'
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_pr ofile.macports-saved_2011-05-10_at_15:03:02
+##
+
+# MacPorts Installer addition on 2011-05-10_at_15:03:02: adding an appropriate PATH variab le for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# Fix problems with modified links owing to the update to Mac OS X 10.10.
+alias libSM.6.dylib='/opt/local/lib/libSM.6.dylib'
+alias libSM.6.dylib='/opt/X11/lib/libSM.6.dylib'
+# Broken link:::/usr/X11/lib/libSM.6.dylib
+
+
+
+# Create CLASSPATH for ANTLR, a parser generator for Java.
+export CLASSPATH=".:/Applications/apps/sw_dev_tools-not_gnu/antlr/antlr-4.5.3-complete.jar :$CLASSPATH"
+# Create a alias for ANTLR, a parser generator for Java.
+#alias antlr4='java -jar /Applications/apps/sw_dev_tools-not_gnu/antlr/antlr-4.5-complete. jar'
+alias antlr4='java -jar /Applications/apps/sw_dev_tools-not_gnu/antlr/antlr-4.5.3-complete .jar'
+alias grun='java org.antlr.v4.runtime.misc.TestRig'
+:[K[K
+
+
+
+
+
+
+
+
+
+
+
+####################################################################
+# Added to install GNU Octave
+export CFLAGS="-I/usr/local/include"
+export CPPFLAGS="-I/usr/local/include"
+export LDFLAGS="-L/usr/local/lib"
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_pr ofile.macports-saved_2015-04-11_at_12:03:50
+##
+
+# MacPorts Installer addition on 2015-04-11_at_12:03:50: adding an appropriate PATH variab le for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+##
+# Your previous /Users/zhiyang/.bash_profile file was backed up as /Users/zhiyang/.bash_pr ofile.macports-saved_2016-06-03_at_18:43:27
+##
+
+# MacPorts Installer addition on 2016-06-03_at_18:43:27: adding an appropriate PATH variab le for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+[K[?1l>Go Trojans >more Hello.g4 
+[?1h=// Define a grammar called Hello
+grammar Hello;
+r  : 'hello' ID ;         // match keyword hello followed by an identifier
+ID : [a-z]+ ;             // match lower-case identifiers
+WS : [ \t\r\n]+ -> skip ; // skip spaces, tabs, newlines
+[K[?1l>Go Trojans >ls -al
+total 32
+drwxr-xr-x  6 zhiyang  staff   204 Sep 11 20:39 .
+drwxr-xr-x  6 zhiyang  staff   204 Sep 11 15:39 ..
+-rw-r--r--  1 zhiyang  staff   237 Sep 11 15:13 Hello.g4
+-rw-r--r--  1 zhiyang  staff  1551 Sep 11 20:37 makefile
+drwxr-xr-x  3 zhiyang  staff   102 Sep 11 20:38 spare
+-rw-r--r--  1 zhiyang  staff  6945 Sep 11 20:41 transcript-part-0.txt
+Go Trojans >antlr4 Hello.g4
+Go Trojans >antlr4 Hello.g4[C[C[C[C[C[C[C[C[C[C[C[C[9Pls -al
+total 80
+drwxr-xr-x  12 zhiyang  staff   408 Sep 11 20:41 .
+drwxr-xr-x   6 zhiyang  staff   204 Sep 11 15:39 ..
+-rw-r--r--   1 zhiyang  staff   237 Sep 11 15:13 Hello.g4
+-rw-r--r--   1 zhiyang  staff    27 Sep 11 20:41 Hello.tokens
+-rw-r--r--   1 zhiyang  staff  1304 Sep 11 20:41 HelloBaseListener.java
+-rw-r--r--   1 zhiyang  staff  3131 Sep 11 20:41 HelloLexer.java
+-rw-r--r--   1 zhiyang  staff    27 Sep 11 20:41 HelloLexer.tokens
+-rw-r--r--   1 zhiyang  staff   536 Sep 11 20:41 HelloListener.java
+-rw-r--r--   1 zhiyang  staff  3576 Sep 11 20:41 HelloParser.java
+-rw-r--r--   1 zhiyang  staff  1551 Sep 11 20:37 makefile
+drwxr-xr-x   3 zhiyang  staff   102 Sep 11 20:38 spare
+-rw-r--r--   1 zhiyang  staff  6945 Sep 11 20:41 transcript-part-0.txt
+Go Trojans >ls -alantlr4 Hello.g4[C[C[C[C[C[C[C[C[C[C[C[C[9Pls -al[Kjavac Hello*.java
+Go Trojans >javac Hello*.java[C[C[C[C[C[C[C[C[C[C[C[C[11Pls -alantlr4 Hello.g4[C[C[C[C[C[C[C[C[C[C[C[C[9Pls -al
+total 136
+drwxr-xr-x  17 zhiyang  staff   578 Sep 11 20:41 .
+drwxr-xr-x   6 zhiyang  staff   204 Sep 11 15:39 ..
+-rw-r--r--   1 zhiyang  staff   237 Sep 11 15:13 Hello.g4
+-rw-r--r--   1 zhiyang  staff    27 Sep 11 20:41 Hello.tokens
+-rw-r--r--   1 zhiyang  staff   794 Sep 11 20:41 HelloBaseListener.class
+-rw-r--r--   1 zhiyang  staff  1304 Sep 11 20:41 HelloBaseListener.java
+-rw-r--r--   1 zhiyang  staff  3356 Sep 11 20:41 HelloLexer.class
+-rw-r--r--   1 zhiyang  staff  3131 Sep 11 20:41 HelloLexer.java
+-rw-r--r--   1 zhiyang  staff    27 Sep 11 20:41 HelloLexer.tokens
+-rw-r--r--   1 zhiyang  staff   304 Sep 11 20:41 HelloListener.class
+-rw-r--r--   1 zhiyang  staff   536 Sep 11 20:41 HelloListener.java
+-rw-r--r--   1 zhiyang  staff   869 Sep 11 20:41 HelloParser$RContext.class
+-rw-r--r--   1 zhiyang  staff  4160 Sep 11 20:41 HelloParser.class
+-rw-r--r--   1 zhiyang  staff  3576 Sep 11 20:41 HelloParser.java
+-rw-r--r--   1 zhiyang  staff  1551 Sep 11 20:37 makefile
+drwxr-xr-x   3 zhiyang  staff   102 Sep 11 20:38 spare
+-rw-r--r--   1 zhiyang  staff  8292 Sep 11 20:41 transcript-part-0.txt
+Go Trojans >grun Hello r -tree
+Warning: TestRig moved to org.antlr.v4.gui.TestRig; calling automatically
+hello world
+D ^D(r hello world)
+Go Trojans >grun Hello r -tree[K[K[K[Kgui
+Warning: TestRig moved to org.antlr.v4.gui.TestRig; calling automatically
+Hello Wor         hello world
+^DGo Trojans >exit
+exit
+
+Script done on Sun Sep 11 20:44:01 2016
