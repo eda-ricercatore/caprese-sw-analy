@@ -15,7 +15,16 @@
 
 
 
+
 all:
+	javac *.java
+	java JavaParserTest ./benchmarks/Test.java
+
+
+
+
+
+parse:
 	#./setup.bash
 	antlr4 Java.g4
 	javac *.java
