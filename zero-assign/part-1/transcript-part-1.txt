@@ -1,0 +1,137 @@
+Last login: Sun Sep 11 21:00:03 on ttys011
+Go Trojans >pwd
+/Users/zhiyang/Documents/2016/tamu/corsi/autunno/caprese-sw-analy/zero-assign/part-1
+Go Trojans >ls -al
+total 64
+drwxr-xr-x  5 zhiyang  staff    170 Sep 11 21:00 .
+drwxr-xr-x  6 zhiyang  staff    204 Sep 11 15:39 ..
+-rw-r--r--  1 zhiyang  staff  21072 Sep 11 15:41 Java.g4
+-rw-r--r--  1 zhiyang  staff   1639 Sep 11 20:49 makefile
+-rwxr--r--  1 zhiyang  staff    181 Sep 11 15:41 setup.bash
+Go Trojans >antlr4 Java.g4
+Go Trojans >javac *.java
+Go Trojans >grun Java compilationUnit *.java
+Warning: TestRig moved to org.antlr.v4.gui.TestRig; calling automatically
+JavaBaseListener.java
+JavaLexer.java
+JavaListener.java
+JavaParser.java
+Go Trojans >ls -la
+total 1992
+drwxr-xr-x  116 zhiyang  staff    3944 Sep 11 21:00 .
+drwxr-xr-x    6 zhiyang  staff     204 Sep 11 15:39 ..
+-rw-r--r--    1 zhiyang  staff   21072 Sep 11 15:41 Java.g4
+-rw-r--r--    1 zhiyang  staff    2025 Sep 11 21:00 Java.tokens
+-rw-r--r--    1 zhiyang  staff   25293 Sep 11 21:00 JavaBaseListener.class
+-rw-r--r--    1 zhiyang  staff   36122 Sep 11 21:00 JavaBaseListener.java
+-rw-r--r--    1 zhiyang  staff   22899 Sep 11 21:00 JavaLexer.class
+-rw-r--r--    1 zhiyang  staff   37592 Sep 11 21:00 JavaLexer.java
+-rw-r--r--    1 zhiyang  staff    2025 Sep 11 21:00 JavaLexer.tokens
+-rw-r--r--    1 zhiyang  staff   18604 Sep 11 21:00 JavaListener.class
+-rw-r--r--    1 zhiyang  staff   37015 Sep 11 21:00 JavaListener.java
+-rw-r--r--    1 zhiyang  staff    1092 Sep 11 21:00 JavaParser$AnnotationConstantRestContext.class
+-rw-r--r--    1 zhiyang  staff    1366 Sep 11 21:00 JavaParser$AnnotationContext.class
+-rw-r--r--    1 zhiyang  staff    1343 Sep 11 21:00 JavaParser$AnnotationMethodOrConstantRestContext.class
+-rw-r--r--    1 zhiyang  staff    1226 Sep 11 21:00 JavaParser$AnnotationMethodRestContext.class
+-rw-r--r--    1 zhiyang  staff    1028 Sep 11 21:00 JavaParser$AnnotationNameContext.class
+-rw-r--r--    1 zhiyang  staff    1352 Sep 11 21:00 JavaParser$AnnotationTypeBodyContext.class
+-rw-r--r--    1 zhiyang  staff    1275 Sep 11 21:00 JavaParser$AnnotationTypeDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1521 Sep 11 21:00 JavaParser$AnnotationTypeElementDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    2082 Sep 11 21:00 JavaParser$AnnotationTypeElementRestContext.class
+-rw-r--r--    1 zhiyang  staff    1007 Sep 11 21:00 JavaParser$ArgumentsContext.class
+-rw-r--r--    1 zhiyang  staff    1415 Sep 11 21:00 JavaParser$ArrayCreatorRestContext.class
+-rw-r--r--    1 zhiyang  staff    1277 Sep 11 21:00 JavaParser$ArrayInitializerContext.class
+-rw-r--r--    1 zhiyang  staff    1197 Sep 11 21:00 JavaParser$BlockContext.class
+-rw-r--r--    1 zhiyang  staff    1442 Sep 11 21:00 JavaParser$BlockStatementContext.class
+-rw-r--r--    1 zhiyang  staff    1703 Sep 11 21:00 JavaParser$CatchClauseContext.class
+-rw-r--r--    1 zhiyang  staff    1212 Sep 11 21:00 JavaParser$CatchTypeContext.class
+-rw-r--r--    1 zhiyang  staff    1247 Sep 11 21:00 JavaParser$ClassBodyContext.class
+-rw-r--r--    1 zhiyang  staff    1568 Sep 11 21:00 JavaParser$ClassBodyDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1177 Sep 11 21:00 JavaParser$ClassCreatorRestContext.class
+-rw-r--r--    1 zhiyang  staff    1671 Sep 11 21:00 JavaParser$ClassDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1065 Sep 11 21:00 JavaParser$ClassOrInterfaceModifierContext.class
+-rw-r--r--    1 zhiyang  staff    1600 Sep 11 21:00 JavaParser$ClassOrInterfaceTypeContext.class
+-rw-r--r--    1 zhiyang  staff    1907 Sep 11 21:00 JavaParser$CompilationUnitContext.class
+-rw-r--r--    1 zhiyang  staff    1423 Sep 11 21:00 JavaParser$ConstDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1244 Sep 11 21:00 JavaParser$ConstantDeclaratorContext.class
+-rw-r--r--    1 zhiyang  staff    1036 Sep 11 21:00 JavaParser$ConstantExpressionContext.class
+-rw-r--r--    1 zhiyang  staff    1001 Sep 11 21:00 JavaParser$ConstructorBodyContext.class
+-rw-r--r--    1 zhiyang  staff    1618 Sep 11 21:00 JavaParser$ConstructorDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1771 Sep 11 21:00 JavaParser$CreatedNameContext.class
+-rw-r--r--    1 zhiyang  staff    1566 Sep 11 21:00 JavaParser$CreatorContext.class
+-rw-r--r--    1 zhiyang  staff    1014 Sep 11 21:00 JavaParser$DefaultValueContext.class
+-rw-r--r--    1 zhiyang  staff    1302 Sep 11 21:00 JavaParser$ElementValueArrayInitializerContext.class
+-rw-r--r--    1 zhiyang  staff    1396 Sep 11 21:00 JavaParser$ElementValueContext.class
+-rw-r--r--    1 zhiyang  staff    1206 Sep 11 21:00 JavaParser$ElementValuePairContext.class
+-rw-r--r--    1 zhiyang  staff    1267 Sep 11 21:00 JavaParser$ElementValuePairsContext.class
+-rw-r--r--    1 zhiyang  staff    1781 Sep 11 21:00 JavaParser$EnhancedForControlContext.class
+-rw-r--r--    1 zhiyang  staff    1302 Sep 11 21:00 JavaParser$EnumBodyDeclarationsContext.class
+-rw-r--r--    1 zhiyang  staff    1694 Sep 11 21:00 JavaParser$EnumConstantContext.class
+-rw-r--r--    1 zhiyang  staff     949 Sep 11 21:00 JavaParser$EnumConstantNameContext.class
+-rw-r--r--    1 zhiyang  staff    1227 Sep 11 21:00 JavaParser$EnumConstantsContext.class
+-rw-r--r--    1 zhiyang  staff    1608 Sep 11 21:00 JavaParser$EnumDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1370 Sep 11 21:00 JavaParser$ExplicitGenericInvocationContext.class
+-rw-r--r--    1 zhiyang  staff    1432 Sep 11 21:00 JavaParser$ExplicitGenericInvocationSuffixContext.class
+-rw-r--r--    1 zhiyang  staff    2696 Sep 11 21:00 JavaParser$ExpressionContext.class
+-rw-r--r--    1 zhiyang  staff    1222 Sep 11 21:00 JavaParser$ExpressionListContext.class
+-rw-r--r--    1 zhiyang  staff    1213 Sep 11 21:00 JavaParser$FieldDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff     986 Sep 11 21:00 JavaParser$FinallyBlockContext.class
+-rw-r--r--    1 zhiyang  staff    1489 Sep 11 21:00 JavaParser$ForControlContext.class
+-rw-r--r--    1 zhiyang  staff    1212 Sep 11 21:00 JavaParser$ForInitContext.class
+-rw-r--r--    1 zhiyang  staff    1007 Sep 11 21:00 JavaParser$ForUpdateContext.class
+-rw-r--r--    1 zhiyang  staff    1607 Sep 11 21:00 JavaParser$FormalParameterContext.class
+-rw-r--r--    1 zhiyang  staff    1467 Sep 11 21:00 JavaParser$FormalParameterListContext.class
+-rw-r--r--    1 zhiyang  staff    1062 Sep 11 21:00 JavaParser$FormalParametersContext.class
+-rw-r--r--    1 zhiyang  staff    1314 Sep 11 21:00 JavaParser$GenericConstructorDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1350 Sep 11 21:00 JavaParser$GenericInterfaceMethodDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1269 Sep 11 21:00 JavaParser$GenericMethodDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1042 Sep 11 21:00 JavaParser$ImportDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1453 Sep 11 21:00 JavaParser$InnerCreatorContext.class
+-rw-r--r--    1 zhiyang  staff    1287 Sep 11 21:00 JavaParser$InterfaceBodyContext.class
+-rw-r--r--    1 zhiyang  staff    1485 Sep 11 21:00 JavaParser$InterfaceBodyDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1556 Sep 11 21:00 JavaParser$InterfaceDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    2354 Sep 11 21:00 JavaParser$InterfaceMemberDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1610 Sep 11 21:00 JavaParser$InterfaceMethodDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1627 Sep 11 21:00 JavaParser$LastFormalParameterContext.class
+-rw-r--r--    1 zhiyang  staff    1167 Sep 11 21:00 JavaParser$LiteralContext.class
+-rw-r--r--    1 zhiyang  staff    1648 Sep 11 21:00 JavaParser$LocalVariableDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1167 Sep 11 21:00 JavaParser$LocalVariableDeclarationStatementContext.class
+-rw-r--r--    1 zhiyang  staff    2679 Sep 11 21:00 JavaParser$MemberDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff     976 Sep 11 21:00 JavaParser$MethodBodyContext.class
+-rw-r--r--    1 zhiyang  staff    1724 Sep 11 21:00 JavaParser$MethodDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1041 Sep 11 21:00 JavaParser$ModifierContext.class
+-rw-r--r--    1 zhiyang  staff    1058 Sep 11 21:00 JavaParser$NonWildcardTypeArgumentsContext.class
+-rw-r--r--    1 zhiyang  staff    1167 Sep 11 21:00 JavaParser$NonWildcardTypeArgumentsOrDiamondContext.class
+-rw-r--r--    1 zhiyang  staff    1412 Sep 11 21:00 JavaParser$PackageDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1011 Sep 11 21:00 JavaParser$ParExpressionContext.class
+-rw-r--r--    1 zhiyang  staff    2064 Sep 11 21:00 JavaParser$PrimaryContext.class
+-rw-r--r--    1 zhiyang  staff     762 Sep 11 21:00 JavaParser$PrimitiveTypeContext.class
+-rw-r--r--    1 zhiyang  staff    1128 Sep 11 21:00 JavaParser$QualifiedNameContext.class
+-rw-r--r--    1 zhiyang  staff    1252 Sep 11 21:00 JavaParser$QualifiedNameListContext.class
+-rw-r--r--    1 zhiyang  staff    1779 Sep 11 21:00 JavaParser$ResourceContext.class
+-rw-r--r--    1 zhiyang  staff    1047 Sep 11 21:00 JavaParser$ResourceSpecificationContext.class
+-rw-r--r--    1 zhiyang  staff    1187 Sep 11 21:00 JavaParser$ResourcesContext.class
+-rw-r--r--    1 zhiyang  staff    3541 Sep 11 21:00 JavaParser$StatementContext.class
+-rw-r--r--    1 zhiyang  staff    1041 Sep 11 21:00 JavaParser$StatementExpressionContext.class
+-rw-r--r--    1 zhiyang  staff    1169 Sep 11 21:00 JavaParser$SuperSuffixContext.class
+-rw-r--r--    1 zhiyang  staff    1568 Sep 11 21:00 JavaParser$SwitchBlockStatementGroupContext.class
+-rw-r--r--    1 zhiyang  staff    1216 Sep 11 21:00 JavaParser$SwitchLabelContext.class
+-rw-r--r--    1 zhiyang  staff     998 Sep 11 21:00 JavaParser$TypeArgumentContext.class
+-rw-r--r--    1 zhiyang  staff    1227 Sep 11 21:00 JavaParser$TypeArgumentsContext.class
+-rw-r--r--    1 zhiyang  staff    1068 Sep 11 21:00 JavaParser$TypeArgumentsOrDiamondContext.class
+-rw-r--r--    1 zhiyang  staff    1187 Sep 11 21:00 JavaParser$TypeBoundContext.class
+-rw-r--r--    1 zhiyang  staff    2076 Sep 11 21:00 JavaParser$TypeDeclarationContext.class
+-rw-r--r--    1 zhiyang  staff    1182 Sep 11 21:00 JavaParser$TypeListContext.class
+-rw-r--r--    1 zhiyang  staff    1179 Sep 11 21:00 JavaParser$TypeParameterContext.class
+-rw-r--r--    1 zhiyang  staff    1237 Sep 11 21:00 JavaParser$TypeParametersContext.class
+-rw-r--r--    1 zhiyang  staff    1197 Sep 11 21:00 JavaParser$TypeTypeContext.class
+-rw-r--r--    1 zhiyang  staff    1271 Sep 11 21:00 JavaParser$VariableDeclaratorContext.class
+-rw-r--r--    1 zhiyang  staff     969 Sep 11 21:00 JavaParser$VariableDeclaratorIdContext.class
+-rw-r--r--    1 zhiyang  staff    1287 Sep 11 21:00 JavaParser$VariableDeclaratorsContext.class
+-rw-r--r--    1 zhiyang  staff    1224 Sep 11 21:00 JavaParser$VariableInitializerContext.class
+-rw-r--r--    1 zhiyang  staff    1026 Sep 11 21:00 JavaParser$VariableModifierContext.class
+-rw-r--r--    1 zhiyang  staff  102173 Sep 11 21:00 JavaParser.class
+-rw-r--r--    1 zhiyang  staff  266258 Sep 11 21:00 JavaParser.java
+-rw-r--r--    1 zhiyang  staff    1639 Sep 11 20:49 makefile
+-rwxr--r--    1 zhiyang  staff     181 Sep 11 15:41 setup.bash
+Go Trojans >
