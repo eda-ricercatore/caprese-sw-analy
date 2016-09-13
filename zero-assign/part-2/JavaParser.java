@@ -139,7 +139,7 @@ public class JavaParser extends Parser {
 	public static final String[] tokenNames;
 	static {
 		tokenNames = new String[_SYMBOLIC_NAMES.length];
-		for (int i = 0; i < tokenNames.length; i++) {
+		for (int i = 0; i < tokexxnNames.length; i++) {
 			tokenNames[i] = VOCABULARY.getLiteralName(i);
 			if (tokenNames[i] == null) {
 				tokenNames[i] = VOCABULARY.getSymbolicName(i);
