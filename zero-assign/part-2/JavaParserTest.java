@@ -1,4 +1,14 @@
 /**
+ * Class information:
+ *	A Java class to 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  *
  *	Author Information
  *
@@ -35,6 +45,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 public class JavaParserTest extends JavaBaseListener{
+//	static TokenStreamRewriter rewriter = null;
 
 	public static void main(String[] args) throws IOException {
 		if(args.length<1)
@@ -60,7 +71,10 @@ public class JavaParserTest extends JavaBaseListener{
 	 */
 	@Override
 	public void enterStatement(JavaParser.StatementContext ctx){
-		//first token is 'if'
+		ParExpressionContext parExpressionCtx = ctx.parExpression();
+		ExpressionContext exprCtx = parExpressoinCtx.expression();
+
+		// Is the first token 'if'?
 		if(ctx.getStart().getText().equals("if")) {
 			System.out.println("If statement Found!");
 			// Second token is '('

@@ -4,7 +4,7 @@
 
 ###	Solution for Programming Assignment 0
 
-
+See [Assignment 0](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign) for the solution attempt and related software documentation.
 
 
 
