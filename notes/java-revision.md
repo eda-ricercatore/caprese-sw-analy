@@ -30,8 +30,6 @@
 
 #	Author Information
 
-When 
-
 
 The MIT License (MIT)
 

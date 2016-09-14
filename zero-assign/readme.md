@@ -1,18 +1,11 @@
 #	My Respository for "CSCE 689: Fundamentals of Software Analysis" (Fall 2016)
 
-	This document provides an overview of this repository for
-		programming assignments of the course CSCE 689, Section 601,
-		"Special Topic: Fundamentals of Software Analysis," which was
-		offered in Fall 2016.
+This document provides an overview of my source code and software
+	documentation for Programming Assignment #1 of the course
+	CSCE 689, Section 601, "Special Topic: Fundamentals of Software
+	Analysis," which was offered in Fall 2016.
 
-	The course is taught by Prof. Jeff Huang.
-	
-	This repository also includes the source code and documentation
-		for the course project.
-
-##	Solutions to Programming Assignment 0
-
-###	Solution for Part 0
+##	Solution for Part 0
 
 See [part 0](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign/part-0) for the solution attempt and related software documentation.
 
@@ -40,15 +33,15 @@ Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed o
 	Wikipedia contributors, "TITLE OF THE ARTICLE," in Wikipedia, The Free Encyclopedia: CATEGORY, Wikimedia Foundation, San Francisco, CA, MONTH DATE, YEAR.
 Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on February 18, 2016.
 
-###	Solution for Part 1
+##	Solution for Part 1
 
 See [part 1](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign/part-1) for the solution attempt and related software documentation.
 
-###	Solution for Part 2
+##	Solution for Part 2
 
 See [part 2](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign/part-2) for the solution attempt and related software documentation.
 
-###	Solution for Part 3
+##	Solution for Part 3
 
 See [part 3]() for the solution attempt and related software documentation.
 

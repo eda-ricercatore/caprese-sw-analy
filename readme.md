@@ -1,5 +1,33 @@
 #	My Respository for "CSCE 689: Fundamentals of Software Analysis" (Fall 2016)
 
+This document provides an overview of this repository for
+	programming assignments of the course CSCE 689, Section 601,
+	"Special Topic: Fundamentals of Software Analysis," which was
+	offered in Fall 2016.
+
+The course is taught by Prof. Jeff Huang.
+	
+This repository also includes the source code and documentation for
+	the course project.
+	
+#	Organization of the Repository: An Overview
+
+This repository contains solutions to the following programming
+	assignments:
++	Programming assignment #0.
++	Programming assignment #1.
++	Programming assignment #2.
+
+This repository also contains the source code and software
+	documentation for the course project.
+	
+In addition, this repository contains revision notes about the
+	following topics:
++	Compiler design.
+	- Parsing.
++	Java programming.
+
+
 ##	Solutions to Programming Assignments
 
 ###	Solution for Programming Assignment 0
