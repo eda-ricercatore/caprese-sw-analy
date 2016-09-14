@@ -5,7 +5,7 @@ This document provides an overview of this repository for
 	"Special Topic: Fundamentals of Software Analysis," which was
 	offered in Fall 2016.
 
-The course is taught by Prof. Jeff Huang.
+The course is taught by Prof. [Jeff Huang](https://parasol.tamu.edu/~jeff/).
 	
 This repository also includes the source code and documentation for
 	the course project.

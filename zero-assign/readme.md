@@ -43,7 +43,7 @@ See [part 2](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zer
 
 ##	Solution for Part 3
 
-See [part 3]() for the solution attempt and related software documentation.
+See [part 3](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign/part-3) for the solution attempt and related software documentation.
 
 
 
