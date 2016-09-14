@@ -26,12 +26,13 @@ The tasks involved:
 	- Test the Java-based parser on some simple input.
 		* View the parser output in "LISP notation", as a list of "cons"es,
 			where each cons contains a car and cdr.
+			(Wikipedia contributors, 2016, \S4.6)
 			
 References:
+	Wikipedia contributors, "Lisp (programming language)," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, September 11, 2016.
+Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on September 13, 2016.
 	Wikipedia contributors, "TITLE OF THE ARTICLE," in Wikipedia, The Free Encyclopedia: CATEGORY, Wikimedia Foundation, San Francisco, CA, MONTH DATE, YEAR.
-Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on February 18, 2016.
-	Wikipedia contributors, "TITLE OF THE ARTICLE," in Wikipedia, The Free Encyclopedia: CATEGORY, Wikimedia Foundation, San Francisco, CA, MONTH DATE, YEAR.
-Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on February 18, 2016.
+Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on September 13, 2016.
 
 ##	Solution for Part 1
 
@@ -66,4 +67,22 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Email address: echo "cukj -wb- 23wU4X5M589 TROJANS cqkH wiuz2y 0f Mw Stanford" | awk '{ sub("23wU4X5M589","F.d_c_b. ") sub("Stanford","d0mA1n"); print $5, $2, $8; for (i=1; i<=1; i++) print "6\b"; print $9, $7, $6 }' | sed y/kqcbuHwM62z/gnotrzadqmC/ | tr 'q' ' ' | tr -d [:cntrl:] | tr -d 'ir' | tr y "\n"		Don't compromise my computing accounts. You have been warned.
+
+
+
+#	Miscellaneous Information
+
+When information needs to be represented mathematically or
+	symbolically with clarity, **LaTeX** notation is used to
+	represent the information.
+
+This information is not typeset in LaTeX, since it is typeset
+	in Markdown.
+
+
+
+
+
+
+
 
