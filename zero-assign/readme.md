@@ -13,7 +13,7 @@ The tasks involved:
 + "Installing" *ANTLR*.
 	- Downloading the parser generator *ANTLR*.
 	- Exporting the CLASSPATH for the *ANTLR* dynamic library.
-	- Creating [UNIX] aliases for running *Java* programs/software,
+	- Creating [*UNIX*] aliases for running *Java* programs/software,
 		which are dynamically linked with the *ANTLR* dynamic library
 		(*jar* file).
 + Try using *ANTLR* with a simple example.
