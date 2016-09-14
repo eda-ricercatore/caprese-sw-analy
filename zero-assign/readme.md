@@ -11,12 +11,12 @@ See [part 0](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zer
 
 The tasks involved:
 + "Installing" ANTLR.
-	- Downloading the parser generator ANTLR.
-	- Exporting the CLASSPATH for the ANTLR dynamic library.
-	- Creating [UNIX] aliases for running Java programs/software,
-		which are dynamically linked with the ANTLR dynamic library
-		(jar file).
-+ Try using ANTLR with a simple example.
+	- Downloading the parser generator *ANTLR*.
+	- Exporting the CLASSPATH for the *ANTLR* dynamic library.
+	- Creating [UNIX] aliases for running *Java* programs/software,
+		which are dynamically linked with the *ANTLR* dynamic library
+		(*jar* file).
++ Try using *ANTLR* with a simple example.
 	- Copy the contents of a simple grammar in Backus–Naur Form (BNF)
 		to a [regular/text] file, which is subsequently referred to
 		as the "grammar file".
