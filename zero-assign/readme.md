@@ -34,22 +34,35 @@ The tasks involved:
 
 Description of files:
 +	Hello.g4
-+	*.*java*
-HelloParser$RContext.class
-Hello.tokens			HelloParser.class
-HelloBaseListener.class		HelloParser.java
-HelloBaseListener.java		antlr4_parse_tree.png
-HelloLexer.class		makefile
-HelloLexer.java			part-0-dialog-box.pdf
-HelloLexer.tokens		spare
-HelloListener.class		transcript-part-0.txt
-HelloListener.java
+	- Regular/text file containing the grammar of the simple formal
+		language, which is described in BNF.
++	"*.java" files
+	- *Java* source code for the *ANTLR*-generated, *Java*-based
+		*Hello* parser.
+	- *ANTLR* generates parsers in the *Java* programming language.
+	- The formal language described by the grammar for the simple
+		example is named, "Hello."
++	"*.class" files
+	- *Java* byte code that is produced by the *Java* compiler.
++	"*.tokens" files
+	- *ANTLR*-generated files required for parsing the formal
+		language, "Hello." 
++	makefile
+	- My attempt at using build automation for this part of the
+		assignment, via *GNU Make*.
++	part-0-dialog-box.pdf
+	- Visual output of the *ANTLR*-generated *Java* parser.
 +	antlr4_parse_tree.png
 	- Visual output of the *ANTLR*-generated *Java* parser.
++	transcript-part-0.txt
+	- A transcript from the *Terminal* session, which shows the
+		processes and *UNIX* commands that I ran to complete this
+		assignment.
+	- It also shows the standard [error] output from the Terminal
+		for the processes and *UNIX* commands that I ran. 
 
 
 
-			
 References:
 +	(Wikipedia contributors, 2016, \S4.6)
 	Wikipedia contributors, "Lisp (programming language)," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, September 11, 2016.
