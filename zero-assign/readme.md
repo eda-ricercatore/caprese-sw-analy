@@ -73,7 +73,7 @@ Email address: echo "cukj -wb- 23wU4X5M589 TROJANS cqkH wiuz2y 0f Mw Stanford" |
 #	Miscellaneous Information
 
 When information needs to be represented mathematically or
-	symbolically with clarity, **LaTeX** notation is used to
+	symbolically with clarity, *LaTeX* notation is used to
 	represent the information.
 
 This information is not typeset in LaTeX, since it is typeset
