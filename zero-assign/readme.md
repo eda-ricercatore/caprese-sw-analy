@@ -29,6 +29,26 @@ The tasks involved:
 			"cons"es, where each cons contains a car and cdr.
 			(Wikipedia contributors, 2016, \S4.6)
 			(Wikipedia contributors, 2016a)
+		* View the parser output visually, in a pop-up window
+			("dialog box").
+
+Description of files:
++	Hello.g4
++	**.java*
+HelloParser$RContext.class
+Hello.tokens			HelloParser.class
+HelloBaseListener.class		HelloParser.java
+HelloBaseListener.java		antlr4_parse_tree.png
+HelloLexer.class		makefile
+HelloLexer.java			part-0-dialog-box.pdf
+HelloLexer.tokens		spare
+HelloListener.class		transcript-part-0.txt
+HelloListener.java
++	antlr4_parse_tree.png
+	- Visual output of the *ANTLR*-generated *Java* parser.
+
+
+
 			
 References:
 +	(Wikipedia contributors, 2016, \S4.6)
