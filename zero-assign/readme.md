@@ -34,7 +34,7 @@ The tasks involved:
 
 Description of files:
 +	Hello.g4
-+	**.java*
++	*.*java*
 HelloParser$RContext.class
 Hello.tokens			HelloParser.class
 HelloBaseListener.class		HelloParser.java
