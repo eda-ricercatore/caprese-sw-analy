@@ -145,6 +145,16 @@ See [part 3](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zer
 
 
 
+#	Miscellaneous Information
+
+When information needs to be represented mathematically or
+	symbolically with clarity, *LaTeX* notation is used to
+	represent the information.
+
+This information is not typeset in *LaTeX*, since it is typeset
+	in *Markdown*.
+
+
 
 
 
@@ -165,14 +175,6 @@ Email address: echo "cukj -wb- 23wU4X5M589 TROJANS cqkH wiuz2y 0f Mw Stanford" |
 
 
 
-#	Miscellaneous Information
-
-When information needs to be represented mathematically or
-	symbolically with clarity, *LaTeX* notation is used to
-	represent the information.
-
-This information is not typeset in *LaTeX*, since it is typeset
-	in *Markdown*.
 
 
 

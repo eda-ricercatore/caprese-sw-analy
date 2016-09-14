@@ -1,14 +1,12 @@
-#	Notes from Revising Java
+#	Notes from Revising Parser Development
 
-##	Syntax Reminders
+This document contains notes from learning/revising parser development,
+	or the development of the front-end of a compiler.
 
-### Using constants in *Java*
+This includes lexical analysis and semantic analysis.
 
-	public static final int MAX_SECONDS = 25;
 
-Reference: 
-+ mk and Justin Nelson (editor), "What is the best way to implement constants in Java?," Stack Exchange Inc., New York, NY, September 16, 2008. Available online from {\it Stack Exchange Inc.: Stack Overflow: Questions} at: \url{http://stackoverflow.com/q/66066}; last accessed on September 14, 2016.
-
+##	
 
 
 
@@ -29,6 +27,30 @@ Reference:
 
 
 
+
+
+#	References
+
++ \cite{Koranne2011}
+	- Koranne, S. Handbook of Open Source Tools. Springer Science+Business Media, LCC, New York, NY, 2011.
++ \cite{Parr2012}
+	- Parr, T. The Definitive ANTLR 4 Reference. Pragmatic Bookshelf, Raleigh, NC, 2012.
+
+
+
+#	Miscellaneous Information
+
+When clarity is required, or strongly recommended, for representing
+	certain information, *LaTeX* is used to typeset/represent such
+	information.
+
+Likewise, when information needs to be represented mathematically or
+	symbolically with clarity, *LaTeX* notation is used to
+	represent the information.
+
+This information is not typeset in *LaTeX*, since it is typeset
+	in *Markdown*.
+ 
 
 
 #	Author Information
