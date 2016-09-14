@@ -28,12 +28,15 @@ The tasks involved:
 		* View the parser output in "*LISP* notation", as a list of
 			"cons"es, where each cons contains a car and cdr.
 			(Wikipedia contributors, 2016, \S4.6)
+			(Wikipedia contributors, 2016a)
 			
 References:
-+	Wikipedia contributors, "Lisp (programming language)," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, September 11, 2016.
++	(Wikipedia contributors, 2016, \S4.6)
+	Wikipedia contributors, "Lisp (programming language)," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, September 11, 2016.
 		Available online at: [Lisp (programming language)](https://en.wikipedia.org/wiki/Lisp_(programming_language)#Conses_and_lists); last accessed on September 13, 2016.
-+	Wikipedia contributors, "cons," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, August 5, 2016.
-		Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on September 13, 2016.
++	(Wikipedia contributors, 2016a)
+	Wikipedia contributors, "cons," in Wikipedia, The Free Encyclopedia: Functional languages, Wikimedia Foundation, San Francisco, CA, August 5, 2016.
+	Available online at: [cons](https://en.wikipedia.org/wiki/Cons); last accessed on September 13, 2016.
 
 
 
