@@ -1,7 +1,10 @@
 #	Notes from Revising Java
 
+##	Syntax Reminders
 
+### Using constants in *Java*
 
+	public static final int MAX_SECONDS = 25;
 
 
 
