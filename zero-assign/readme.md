@@ -10,7 +10,7 @@ This document provides an overview of my source code and software
 See [part 0](https://github.com/eda-ricercatore/caprese-sw-analy/tree/master/zero-assign/part-0) for the solution attempt and related software documentation.
 
 The tasks involved:
-+ "Installing" ANTLR.
++ "Installing" *ANTLR*.
 	- Downloading the parser generator *ANTLR*.
 	- Exporting the CLASSPATH for the *ANTLR* dynamic library.
 	- Creating [UNIX] aliases for running *Java* programs/software,
