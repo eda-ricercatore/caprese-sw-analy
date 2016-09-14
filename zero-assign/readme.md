@@ -80,7 +80,7 @@ When information needs to be represented mathematically or
 	represent the information.
 
 This information is not typeset in *LaTeX*, since it is typeset
-	in Markdown.
+	in *Markdown*.
 
 
 
