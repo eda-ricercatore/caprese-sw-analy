@@ -1,5 +1,15 @@
 #	My Respository for "CSCE 689: Fundamentals of Software Analysis" (Fall 2016)
 
+	This document provides an overview of this repository for
+		programming assignments of the course CSCE 689, Section 601,
+		"Special Topic: Fundamentals of Software Analysis," which was
+		offered in Fall 2016.
+
+	The course is taught by Prof. Jeff Huang.
+	
+	This repository also includes the source code and documentation
+		for the course project.
+
 ##	Solutions to Programming Assignment 0
 
 ###	Solution for Part 0
@@ -50,8 +60,6 @@ See [part 3]() for the solution attempt and related software documentation.
 
 
 #	Author Information
-
-When 
 
 
 The MIT License (MIT)
