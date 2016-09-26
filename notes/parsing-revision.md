@@ -6,17 +6,23 @@ This document contains notes from learning/revising parser development,
 This includes lexical analysis and semantic analysis.
 
 
-##	
+##	Notes from \cite{Koranne2011}
+
+pp. 242, Figure 13.1, What is the output of ANTLR? A parse tree structure?
+
+macro processor, *m4*.
+
+Notes about *flex* (pp. 243):
++ *flex* performs lexical analysis.
++ *flex* tokenizes input streams by partitioning them into string tokens.
++ Input of *flex*:
+	- Table of regular expressions (regex),
+		and corresponding program fragments (actions)  
 
 
 
 
-
-
-
-
-
-
+##	Notes from \cite{Parr2012}
 
 
 
