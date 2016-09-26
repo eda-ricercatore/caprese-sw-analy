@@ -137,7 +137,8 @@
 %	First slide of the presentation
 \title[Quantum Reachability Analysis]
 {\huge 
-Taint Analysis of Microarchitecture Synthesis Software and Designs}
+%Optimization and Taint Analysis of Microarchitecture Synthesis Software}
+Taint Analysis of Microarchitecture Synthesis Software}
 \subtitle{Not Using It to Secure Microarchitectures is Foolish}
 \author{Zhiyang Ong}
 \institute{
@@ -169,22 +170,22 @@ Taint Analysis of Microarchitecture Synthesis Software and Designs}
 
 
 %	Table of Contents
-\AtBeginSection[]		% Do nothing for \subsection*
-{
-	\begin{frame}
-%		\frametitle{\textcolor{yellow}{Table of Contents}}
-		\frametitle{Table of Contents}
-%		\textcolor{yellow}{\tableofcontents[currentsection]}
-		\tableofcontents[currentsection,currentsubsection]
-	\end{frame}
-}
-
-\AtBeginSubsection[]		% Do nothing for \subsection*
-{
-\begin{frame}
-\tableofcontents[currentsection,currentsubsection]
-\end{frame}
-}
+%	\AtBeginSection[]		% Do nothing for \subsection*
+%	{
+%		\begin{frame}
+%	%		\frametitle{\textcolor{yellow}{Table of Contents}}
+%			\frametitle{Table of Contents}
+%	%		\textcolor{yellow}{\tableofcontents[currentsection]}
+%			\tableofcontents[currentsection,currentsubsection]
+%		\end{frame}
+%	}
+%	
+%	\AtBeginSubsection[]		% Do nothing for \subsection*
+%	{
+%	\begin{frame}
+%	\tableofcontents[currentsection,currentsubsection]
+%	\end{frame}
+%	}
 
 %	\section*{Outline}
 %	\begin{frame}
@@ -204,38 +205,36 @@ Taint Analysis of Microarchitecture Synthesis Software and Designs}
 %	Preamble
 
 %	Slide #1
-\section{Preamble}
+%\section{Introduction}
 \begin{frame}
-	\frametitle{Acknowledgments}
-	Dott. Francesco Stefanni, University of Verona 
+	\frametitle{Background}
+	Microarchitecture synthesis software is used to generate cycle-accurate/RTL designs of microarchitectures. \\
 	\ \\
+	Taint analysis has been used to determine security loopholes of software. \\
 	\ \\
-	Dr. Prateek Tandon, who initiated the formation of this reading group on quantum robotics.
-	\ \\
-	\ \\
-	Dr. Shenggang Ying for responding to my queries about their {\it arXiv} research paper. 
-	\ \\
-	\ \\
-	Reference: Shenggang Ying and Mingsheng Ying, ``Reachability Analysis of Quantum Markov Decision Processes,'' in {\it arXiv}, Cornell University, Ithaca, NY, July 9, 2014. Available online from {\it arXiv} as Version 2 at: \url{http://arxiv.org/abs/1406.6146} and \url{http://arxiv.org/abs/1406.6146v2}; May 30, 2015 was the last accessed date.
+	Project Goal: Apply taint analysis to determine the security loopholes of the microarchitecture synthesis software.
 \end{frame}
+
 
 
 
 %	Slide #2
 \frame
 {
-	\frametitle{Warnings!!!}
+	\frametitle{Timeline of Milestones}
 
 	\begin{itemize}
-	\item Research publications on formal verification or formal methods have lots of definitions.
-	\item Exact/Approximate algorithms and heuristics for formal verification or formal methods are based on these definitions.
-	\item Hence, exact definitions of terms in formal verification or formal methods are required for proving these algorithms and heuristics and theorems.
-	\item This set of presentation slides does not cover the paper in the same order.
-	\item Some rearrangements are made to present the material as a hybrid of a brief research presentation and tutorial.
+	\item Benchmarks (now): %\vspace{-0.2cm}
+		\begin{enumerate} %\itemsep -2pt
+		\item Rocket chip: https://github.com/ucb-bar/rocket-chip
+		\item OpenSoCFabric: https://github.com/ucb-bar/OpenSoCFabric
+		\item chisel-torture: https://github.com/ucb-bar/chisel-torture
+		\end{enumerate}
+	\item Learning Chisel: Early October
+	\item firrtl parser: Mid October
+	\item Taint analysis: Late November
 %	\item introduce the notion of reachability analysis, from classical/traditional formal verification, before reachability analysis is introduced for formally verifying quantum systems, including quantum robots.
-	\item $\underline{\varrho}_{\kappa}$
-	\item $\overline{\varrho}_{\kappa}$
-	\item $\rho$
+	\item Regression testing: Early December
 	\end{itemize}
 }
 
@@ -243,67 +242,36 @@ Taint Analysis of Microarchitecture Synthesis Software and Designs}
 
 
 
+%	Slide #3
+%\section{Pictures}
+\begin{frame}
+	\frametitle{Pictures}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Classical Reachability Analysis
-\section{Classical Reachability Analysis}
-
-%	Slide 1
-\frame
-{
-	\frametitle{Classical Reachability Analysis}
-
-	If there exists a path from vertex $s$ in a graph $G$ to vertex $t$ in $G$, $t$ is reachable from $s$. All vertices in $G$ are ``reachable from themselves'' (Yuan, 2006, \S5.2, pp. 85).
+%	branch-prediction%	cache-coherence%	multi-cycle-processor-fsm-ctrl-logic	
+	\begin{figure}[h]
+	\centering 
+	\includegraphics[height=2.2in]{./pics/branch-prediction}
+	\caption{Branch prediction FSM}
+	\label{fig:branchprediction}
+	\end{figure}
 	
-	\begin{itemize}
-	\item Reachability Analysis is : %\vspace{-0.3cm}
-		\begin{itemize} %\itemsep -2pt
-		\item Definition of reachable state in a Petri Net or FSM.
-		\item Define reachability analysis, based on the definition of the reachability of a state in a Petri Net or FSM.
-		\item E.g., A small bounded Petri Net can have many states, which are represented in the state/reachability graph. Use symmetry or stubborn set reductions, followed by creating and checking CTL formulae and predicates. Determine if a target state/marking is reachable from the initial state/marking, not necessarily via the minimal path. Check CTL properties/predicates for testing liveness properties.
-		\item Give more examples of reachability analysis
-		\end{itemize}
-	\item Explain the importance of reachability analysis	
-	\end{itemize}
-}
+\end{frame}
 
 
+%	Slide #4
+%\section{Pictures}
+\begin{frame}
+	\frametitle{Pictures}
 
-%	Slide 2
-\frame
-{
-	\frametitle{Classical Reachability Analysis}
+%	branch-prediction%	cache-coherence%	multi-cycle-processor-fsm-ctrl-logic	
+	\begin{figure}[h]
+	\centering 
+	\includegraphics[height=2.2in]{./pics/cache-coherence}
+	\caption{Cache coherence FSM}
+	\label{fig:cachecoherence}
+	\end{figure}
 
-	Reachability analysis is defined as follows:% \vspace{-0.3cm}
-	\begin{enumerate} %\itemsep -2pt
-	\item ``A fixed-point analysis'' technique to determine if a ``set of states [is] reachable from a designated set of initial states'' (Yuan, 2006, \S1.8.2., pp. 16).
-	\item 
-	\end{enumerate}
-	
-	
-	
-	\begin{itemize}
-	\item  : %\vspace{-0.3cm}
-		\begin{itemize} %\itemsep -2pt
-		\item Definition of reachable state in a Petri Net or FSM.
-		\item Define reachability analysis, based on the definition of the reachability of a state in a Petri Net or FSM.
-		\item E.g., A small bounded Petri Net can have many states, which are represented in the state/reachability graph. Use symmetry or stubborn set reductions, followed by creating and checking CTL formulae and predicates. Determine if a target state/marking is reachable from the initial state/marking, not necessarily via the minimal path. Check CTL properties/predicates for testing liveness properties.
-		\item Give more examples of reachability analysis
-		\end{itemize}
-	\item Explain the importance of reachability analysis	
-	\end{itemize}
-}
-
-
-
-%	Slide 3
-\frame
-{
-	\frametitle{References for Classical Reachability Analysis}
-
-	(Yuan, 2006) Yuan, J., Pixley, C., and Aziz, A. Constrained-Based Verification. Springer Science+Business Media, Inc., New York, NY, 2006.
-}
+\end{frame}
 
 
 
@@ -311,157 +279,19 @@ Taint Analysis of Microarchitecture Synthesis Software and Designs}
 
 
 
+%	Slide #5
+%\section{Pictures}
+\begin{frame}
+	\frametitle{Pictures}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Problem Statement
-\section{Problem Statement}
-
-
-%	Slide 2
-\frame
-{
-	\frametitle{Problem Statement}
-
-	\begin{itemize} %\itemsep -2pt
-	\item Models of concurrent and nondeterministic quantum systems need to be verified.
-	\item Quantum Markov decision processes (qMDPs) can model such quantum systems.
-	\item Question: How can we carry out reachability analysis on concurrent and nondeterministic quantum systems, modeled as qMDPs?
-	\item Input: qMDP $\mathcal{M}$
-	\item Input: state space $\mathcal{H}$, which is a Hilbert space
-	\item Input: state space $B \in \mathcal{H}$
-	\item Output: Scheduler $\mathfrak{S}$
-	\item Output: Non-negative integer, $n$.
-%	\item Input: Description of system behavior
-%		\begin{itemize}
-%		\item i.e., specifications based on quantum automata
-%		\end{itemize}
-%	\item Input: Functional linear-time properties
-%		\begin{itemize}
-%		\item Linear-time invariants of quantum automata-based model
-%		\end{itemize}
-	%\item System model based on quantum automata
-	%\item System propeties (i.e., invariants): invariants of quantum automata-based model.
-	%\item Output: Boolean flag indicating correct/incorrect system behavior/functionality
-	\end{itemize}
-}
-
-
-
-
-%	Slide 3
-\frame
-{
-	\frametitle{Shortcomings of Classical Reachability Analysis}
-
-	\begin{itemize} %\itemsep -3pt
-	\item Classic Markov chains cannot capture concurrency.
-	\item A Markov chain only allows one ``choice'' of action per state, which implies that all ``rewards'' of the Markov chain are the same.
-	\item Cannot formalize behavior/functionality of quantum systems
-		\begin{itemize}
-		\item Discrete state spaces of classical systems are finite or countably finite
-		\item Continuous state spaces of quantum systems cannot be addressed by discrete state spaces
-		\item State spaces of quantum systems are continuous, even for finite-dimensional quantum systems
-		\item Need to examine a finite number of representative elements  (in an orthonormal basis) of the state space of a quantum system
-		\item Or, at most, examine countably infinitely many representative elements of this state space
-		\item Always preserve the linear algebraic structure of the representative elements [\& linear-time properties]
-		\end{itemize}
-	\item Cannot formally describe temporal properties of quantum systems
-	\item The (Ying 2014) paper address quantum programs. However, the modeling of quantum programs can be extended for quantum systems, including quantum robots?
-	\end{itemize}
-}
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Prior Works
-\section{Prior and Related Works}
-
-%	Slide 4
-\frame
-{
-	\frametitle{Prior and Related Work}
-
-	\begin{itemize}
-	\item Almost all previous work use model checking to verify quantum communication protocols
-	\item Use quantum process algebra to verify quantum communication systems, including quantum error correction codes
-	\item Use simulation tools for quantum systems to verify their behavior/functionality, especially their correctness and safety properties
-	\item Quantum partially observable Markov decision processes (QOMDPs), which are introduced by (Barry, Barry, and Aaronson, 2014), only care about the reachability of a single state (i.e., goal state).: %\vspace{-0.2cm}
-		\begin{itemize} \itemsep -2pt
-		\item The paper does not specifically address the reachability of invariant subspaces.
-		\item Goal-state reachability is undecidable for QOMDPs.
-		\end{itemize}
-	\end{itemize}
-}
-
-
-Invariant subspace: sounds like T: V-->V
-something that transforms you into the same space
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Design Decisions
-\section{Design Decisions}
-
-%	Slide 5
-\frame
-{
-	\frametitle{Design Decisions}
-
-	\begin{itemize}
-	\item Quantum model checking framework for the formal verification of generic quantum engineering systems
-		\begin{itemize}
-		\item Not just quantum communication systems
-		\end{itemize}
-	\item Use a formal method based on modeling quantum systems with quantum automaton
-		\begin{itemize}
-		\item Exploit similar work in quantum Markov chains, quantum dot automata, \& quantum cellular automata
-		\end{itemize}
-	\item Only consider linear-time properties of generic quantum systems
-		\begin{itemize}
-		\item Describe these linear-time properties as infinite sequences of sets of atomic propositions, just like LTL model checking
-		\end{itemize}
-	\item Extend this to verify safety properties for reversible automata
-	\item Extend this to verify $\omega$-properties for reversible B{\"{u}}chi automata
-	\item Meet requirements for correctness, safety, \&\ reliability
-	\end{itemize}
-}
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Key Contributions of Ying2014a
-\section{Key Contributions of (Ying 2014)}
-
-%	Slide 6
-\frame
-{
-	\frametitle{Key Contributions of (Ying 2014)}
-
-	\begin{itemize}
-	\item 
-	\end{itemize}
-}
-
-
+%	branch-prediction%	cache-coherence%	multi-cycle-processor-fsm-ctrl-logic	
+	\begin{figure}[h]
+	\centering 
+	\includegraphics[height=2.2in]{./pics/multi-cycle-processor-fsm-ctrl-logic}
+	\caption{FSM of multi-cycle processor's control logic}
+	\label{fig:multicycleprocessorfsmctrllogic}
+	\end{figure}
+\end{frame}
 
 
 
@@ -596,117 +426,9 @@ something that transforms you into the same space
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Analysis on Decidability of Quantum Reachability Analysis}
-
-%%%%%%%%%%%%%%%%%%
-%\subsection{In the Finite-Horizon}
-
-%	Slide #1
-\frame
-{
-	\frametitle{Analysis on Decidability of Quantum Reachability Analysis In the Finite-Horizon}
-
-	\begin{itemize}
-	\item 
-	\end{itemize}
-}
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%
-%\subsection{In the Infinite-Horizon}
-
-%	Slide #1
-\frame
-{
-	\frametitle{Analysis on Decidability of Quantum Reachability Analysis In the Infinite-Horizon}
-
-	\begin{itemize}
-	\item 
-	\end{itemize}
-}
-
-
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Analysis on Complexity of Quantum Reachability Analysis}
-
-%%%%%%%%%%%%%%%%%%
-%\subsection{In the Finite-Horizon}
-
-%	Slide #1
-\frame
-{
-	\frametitle{Analysis on Complexity of Quantum Reachability Analysis In the Finite-Horizon}
-
-	\begin{itemize}
-	\item 
-	\end{itemize}
-}
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%
-%\subsection{In the Infinite-Horizon}
-
-%	Slide #1
-\frame
-{
-	\frametitle{Analysis on Complexity of Quantum Reachability Analysis In the Infinite-Horizon}
-
-	\begin{itemize}
-	\item 
-	\end{itemize}
-}
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Questions That I Have}
-
-%\subsection{Yet to be defined}
-
-
-%	Slide #1
-\frame
-{
-	\frametitle{Questions That I Have}
-
-	\begin{itemize}
-	\item I assume that uncomputable problems are the same as undecidable problems (Barry, Barry, and Aaronson, 2014). %Is this actually true?
-	\item From (Barry, Barry, and Aaronson, 2014), can QOMDPs be reduced to qMDPs?
-	\item The authors mentioned that quantum systems can be modeled as qMDPs? Do such quantum systems include robots, which can be modeled as quantum dynamical systems? Or, is it restricted to quantum computer programs?
-	\item What is the ortho-complement of a subspace?
-%	See page 2, left column, in the middle of the 3rd/4th paragraph that starts with the following in bold, "Contribution of the paper".
-	\item What does it mean for a measurement to be projective? What does it mean mathematically?
-%	Page 2, right column, in the 2nd/3rd paragraph. 
-	\item Is ``W'' on page 2, right column, in the last paragraph ($w \in W$), a set of words ``w''?
-	\item $\otimes$, right column, in paragraph 1/2 on page 2
-	\end{itemize}
-}
-
-do Markov chains inherently model nondeterminism?
-
-  Are there extensions of Markov chains to capture/model concurrency?
 
 
 
@@ -717,41 +439,10 @@ do Markov chains inherently model nondeterminism?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Discussions}
-
-%\subsection{Yet to be defined}
-
-
-%	Slide #1
-\frame
-{
-	\frametitle{Discussions}
-
-	\begin{itemize}
-	\item (What do I think about this work?)
-	\item 
-	\end{itemize}
-}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Future Work}
-
-%\subsection{Yet to be defined}
-
-
-%	Slide #1
-\frame
-{
-	\frametitle{Future Work}
-
-	\begin{itemize}
-	\item Extensions of 
-	\end{itemize}
-}
-
 
 
 
