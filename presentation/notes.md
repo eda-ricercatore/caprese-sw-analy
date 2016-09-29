@@ -24,7 +24,7 @@ See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz
 - Distinguish between real races from false races.
 - Use potential data race information from existing software/program analysis tools
 - Obtain such potential data race information from existing dynamic program analysis
-- Carry out dynamic program analysis
+- Carry out dynamic program analysis to 
 
 
 ##	FastTrack
