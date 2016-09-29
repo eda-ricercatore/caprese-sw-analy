@@ -1,5 +1,7 @@
 #	Summary/Notes of Research Papers on Program Analysis (Software Analysis)
 
+
+
 ##	RacerX
 
 See [RacerX](http://web.stanford.edu/~engler/racerx-sosp03.pdf)
@@ -14,15 +16,13 @@ See [RacerX](http://web.stanford.edu/~engler/racerx-sosp03.pdf)
 
 
 
-
-
-
-
-
-
 ##	RaceFuzzer
 
 See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz.pdf)
+
+- Dynamic program analysis of multi-threaded programs
+- Use potential data race information from existing software/program analysis tools
+- Obtain such potential data race information
 
 
 ##	FastTrack
