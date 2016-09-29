@@ -22,7 +22,7 @@ See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz
 
 - Dynamic program analysis of multi-threaded programs
 - Use potential data race information from existing software/program analysis tools
-- Obtain such potential data race information
+- Obtain such potential data race information from existenting  "dynamic program analysis"
 
 
 ##	FastTrack
