@@ -23,9 +23,9 @@ See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz
 - Dynamic program analysis of multi-threaded programs
 - Distinguish between real races from false races.
 - Use potential data race information from existing software/program analysis tools
-- Obtain such potential data race information from existing dynamic program analysis
-- Carry out dynamic program analysis to 
-
+- Carry out dynamic program analysis to control random scheduler of threads
+- Goal #1 of random scheduler of threads: Create real race conditions with high probability.
+- Goal #2 of random scheduler of threads: Resolve races (race conditions) randomly at runtime.
 
 ##	FastTrack
 
