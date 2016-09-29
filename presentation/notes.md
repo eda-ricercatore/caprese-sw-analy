@@ -26,6 +26,12 @@ See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz
 - Carry out dynamic program analysis to control random scheduler of threads
 - Goal #1 of random scheduler of threads: Create real race conditions with high probability.
 - Goal #2 of random scheduler of threads: Resolve races (race conditions) randomly at runtime.
+- Advantages over existing dynamic analysis tools:
+	+ "Create a real race condition and resolve [it] randomly" to determine if it would cause/trigger errors.
+	+ Enable a given race condition to be replicated/reproduced, using the same seed for pseudo-random number generation. This avoids the need for recording the execution.
+	+ "Has very low overhead" with respect to existing dynamic analysis techniques that can deteect race conditions precisely. It records/tracks only synchronization operations and a pair of memory access statements for each potential race condition.
+
+
 
 ##	FastTrack
 
