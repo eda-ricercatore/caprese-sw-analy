@@ -57,17 +57,27 @@ See [DataCollider](http://research.microsoft.com/pubs/139266/DataCollider%20-%20
 	that occur when multiple "threads erroneously access a shared
 	memory location without appropriate synchronization".
 - During dynamic analysis, it detects data races in kernel modules.
+- It is oblivious to synchronization protocols, including those based
+	on locking, used in limiting/protecting shared memory accesses.
+	+ This is helpful for analyzing low-level code, which tends to
+		use a variety of synchronization protocols/mechanisms that
+		are specific for a device or computer architecture.
+- It carries out random sampling on memory accesses to reduce
+	runtime overhead.
+	+ This prunes the amount of candidates that need to be evaluated
+		for data race errors.
+- In addition, to keep runtime overheads as insignificant/negligible,
+	it exploits breakpoint facilities in hardware architectures.
 
 
 
+##	Pointer Analysis using BDD
 
+See [Pointer Analysis using BDD](http://suif.stanford.edu/~jwhaley/papers/pldi04.pdf)
 
+This is erroneously titled, "Pointer Analysis using BBD," by Prof. Jeff Huang.
 
-
-
-##	Pointer Analysis using BBD
-
-See [Pointer Analysis using BBD](http://suif.stanford.edu/~jwhaley/papers/pldi04.pdf)
+- "Scalable context-sensitive, inclusion-based pointer alias analysis for *Java* programs"
 
 ##	Program Analysis via Graph Reachability
 
