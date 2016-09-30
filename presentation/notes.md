@@ -37,6 +37,12 @@ See [RaceFuzzer](http://www1.cs.columbia.edu/~junfeng/09fa-e6998/papers/racefuzz
 
 See [FastTrack](http://slang.soe.ucsc.edu/cormac/papers/pldi09.pdf)
 
+- Address race conditions in multi-threaded programs.
+- Improvements can be found in:
+	+ Better/Same performance in dynamic analysis
+	+ Better precision in detecting race conditions,
+		and reduce amount of false alarms.
+		* False alarms
 
 
 ##	DataCollider
