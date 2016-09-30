@@ -80,6 +80,7 @@ This is erroneously titled, "Pointer Analysis using BBD," by Prof. Jeff Huang.
 - "Scalable context-sensitive, inclusion-based pointer alias analysis for *Java* programs"
 - It provides context sensitivity by cloning a method for context of interest, and running a context-insensitive algorithm over the expanded call graph that contains the cloned method.
 	+ To obtain (more) precise results, it clones each acyclic path in the call graph of the program under analysis.
+		A single node in the call graph can represent all methods in a strongly connected component.
 - A declarative, logic programming language *Datalog* is used to implement the aforementioned pointer alias analysis; the authors have also developed software to translate the *Datalog* programs into "efficient BDD implementations."
 - A variety of context-sensitive pointer alias analysis techniques have been developed/implemented, such as: side effect analysis, type analysis, and escape analysis.
 
