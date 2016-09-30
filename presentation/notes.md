@@ -48,6 +48,9 @@ See [FastTrack](http://slang.soe.ucsc.edu/cormac/papers/pldi09.pdf)
 		* Produces precise results that means no false alarms
 			are reported.
 
+
+
+
 ##	DataCollider
 
 See [DataCollider](http://research.microsoft.com/pubs/139266/DataCollider%20-%20OSDI2010.pdf)
@@ -86,13 +89,29 @@ This is erroneously titled, "Pointer Analysis using BBD," by Prof. Jeff Huang.
 - A declarative, logic programming language *Datalog* is used to implement the aforementioned pointer alias analysis; the authors have also developed software to translate the *Datalog* programs into "efficient BDD implementations."
 - A variety of context-sensitive pointer alias analysis techniques have been developed/implemented, such as: side effect analysis, type analysis, and escape analysis.
 
+
+
+
 ##	Program Analysis via Graph Reachability
 
 See [Program Analysis via Graph Reachability](http://research.cs.wisc.edu/wpis/papers/tr1386.pdf)
 
+- Discusses the transformation of certain problems in program analysis into problems in graph reachability. 
+- Problems in program analysis that can be transformed as aforementioned include:
+	+ program slicing
+	+ certain dataflow analysis problems
+	+ approximation of possible "shapes" of a program's heap-allocated structures
+	+ flow-insensitive points-to analysis
+
+
+
 ##	Efficient Path Profiling
 
 See [Efficient Path Profiling](http://research.microsoft.com/en-us/um/people/tball/papers/pathprof.pdf)
+
+- A definition of path profile is provided: it 
+
+
 
 ##	Memory Leak Detection
 
