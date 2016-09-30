@@ -52,6 +52,19 @@ See [FastTrack](http://slang.soe.ucsc.edu/cormac/papers/pldi09.pdf)
 
 See [DataCollider](http://research.microsoft.com/pubs/139266/DataCollider%20-%20OSDI2010.pdf)
 
+- A dynamic analysis technique that is "lightweight and effective"
+- Addresses a subset of concurrency errors; specifically, data races
+	that occur when multiple "threads erroneously access a shared
+	memory location without appropriate synchronization".
+- During dynamic analysis, it detects data races in kernel modules.
+
+
+
+
+
+
+
+
 ##	Pointer Analysis using BBD
 
 See [Pointer Analysis using BBD](http://suif.stanford.edu/~jwhaley/papers/pldi04.pdf)
@@ -85,7 +98,7 @@ See [Delta Debugging](https://www.st.cs.uni-saarland.de/publications/files/zelle
 See [Statistical Debugging](http://www.cs.columbia.edu/~junfeng/09fa-e6998/papers/bug-isolation.pdf)
 
 
-
+Sampling infrastructures, with low overhead
 
 
 
