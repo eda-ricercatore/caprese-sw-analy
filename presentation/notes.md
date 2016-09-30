@@ -78,6 +78,8 @@ See [Pointer Analysis using BDD](http://suif.stanford.edu/~jwhaley/papers/pldi04
 This is erroneously titled, "Pointer Analysis using BBD," by Prof. Jeff Huang.
 
 - "Scalable context-sensitive, inclusion-based pointer alias analysis for *Java* programs"
+- A declarative, logic programming language *Datalog* is used to implement the aforementioned pointer alias analysis; the authors have also developed software to translate the *Datalog* programs into "efficient BDD implementations."
+- A variety of context-sensitive pointer alias analysis
 
 ##	Program Analysis via Graph Reachability
 
