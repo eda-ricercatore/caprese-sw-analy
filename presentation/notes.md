@@ -109,7 +109,7 @@ See [Program Analysis via Graph Reachability](http://research.cs.wisc.edu/wpis/p
 
 See [Efficient Path Profiling](http://research.microsoft.com/en-us/um/people/tball/papers/pathprof.pdf)
 
-- A definition of path profile is provided: it 
+- A definition of path profile is provided: it determines the number of times every/each acyclic path of a routine is executed.
 
 
 
